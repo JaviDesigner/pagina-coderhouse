@@ -6,8 +6,8 @@
    margin: 0;
    box-sizing: border-box;
 }
-
 body {
+   background-color: red;
    font-family:'Sora', sans-serif;
    font-size: 20px;
    color: #0f0e0e;
@@ -24,7 +24,13 @@ p{line-height: 34px;}
 }
 
 .fondoClaro{
-   background-color: #fff1d9;
+  background-color: #fff1d9;
+}
+
+/* ---------------PAGINA 404 -------------*/
+.error404{
+  width: 100vw; 
+  object-fit: cover;
 }
 
 /* MENU */
@@ -78,7 +84,7 @@ button {
     object-fit: cover;
  }
  
- /* SECCION 1 */
+ /*------------- SECCION 1 --------------*/
  .seccion-1_home{
    height: 100vh;
    background-image: url(../assets/img/fondo\ seccion\ 1\ HOME.png);
@@ -94,7 +100,6 @@ button {
  .contenedorImagenSeccion-2_home{
    display: none;
  }
-
 
 
  /* FORMULARIO */
@@ -136,7 +141,7 @@ button {
       color: #fff1d9;
 }
    
- /* SECCION 2 */
+ /* ------------------SECCION 2 -------------------*/
  .imagen_seccion2_home {
     width: 100%;
     background-size: cover;
@@ -145,9 +150,7 @@ button {
     object-fit: cover;
  }
 
- 
-
- /* FOOTER */
+ /*---------------------- FOOTER---------------- */
  .footer{
    background-color: #0f0e0e;
    height: 45vh;
@@ -203,7 +206,7 @@ button {
 
 
 
- /* TABLET */
+ /*------------------- TABLET---------------------- */
 
  @media screen and (min-width:768px) and (max-width: 1024px) {
    body {
@@ -269,12 +272,11 @@ button {
       height: 50px;
     }
 
-
-
-   
-   
-
  }
+
+
+
+ 
  
 /* ------------------------MOBILE--------------------- */
  @media screen and (max-width:767px) 
