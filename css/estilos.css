@@ -309,7 +309,6 @@ button {
    }
    
    .tituloPortada_home{
-      padding-top: 20px;
       height: 45vh;
       text-align: center;
       order:1;
@@ -323,6 +322,7 @@ button {
 
   .contenedor_imagenPortada_home{
    height: 55vh;
+   padding-left: 20px;
    padding-top: 90px;
    order:0;
   }
