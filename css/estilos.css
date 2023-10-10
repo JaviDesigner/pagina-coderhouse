@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;600;700;800&display=swap');
+
+/* GENERAL */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family:'Sora', sans-serif;
+   font-size: 20px;
+   color: #0f0e0e;
+}
+
+h1{font-size: 3.7rem;
+    font-weight:700;}
+h2{font-size: 2.4rem;
+    font-weight:600;}
+p{line-height: 34px;}
+
+.SECCION{
+   height: 100vh;
+}
+
+.fondoClaro{
+   background-color: #fff1d9;
+}
+
+/* MENU */
+.textoMenu{
+   font-size: 16px;
+}
+
+.colorFondoMenu{
+    background-color: white;
+}
+
+/* BOTONES */
+.botonActivo{
+   border: 2px solid #797979;
+   border-radius: 5px;
+}
+button {
+    background-color: #0f0e0e;   
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px 110px;
+    border-radius: 5px;
+    color: #fff1d9;
+}
+.enlace:hover {
+   background-color:#516bff;
+   border-radius: 5px;
+   color: #0f0e0e;
+ }
+
+/* BANNER */
+.altoBanner{
+   height: 100vh;
+}
+
+/* TITULO */
+.titulo_portada_home{
+   padding-right: 100px;
+}
+.parrafos{
+    margin-top: 15px;
+    margin-bottom: 30px;
+ }
+ 
+ /* IMAGEN */
+ .imagenPortada_home {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+ }
+ 
+ /* SECCION 1 */
+ .seccion-1_home{
+   height: 100vh;
+   background-image: url(../assets/img/fondo\ seccion\ 1\ HOME.png);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+ }
+ .width_home{
+   max-width: 45vw;
+ }
+ 
+ .contenedorImagenSeccion-2_home{
+   display: none;
+ }
+
+
+
+ /* FORMULARIO */
+ .comentarios{
+   padding: 0 12px;
+ }
+ #comentarioHome{
+   height: 20vh;
+   background-color: #fff1d9;
+   color: #9d9d9d;
+   font-size: 1rem;
+   border: 2px solid #9d9d9d;
+   border-radius: 5px;
+   padding-top: 15px;
+   padding-left: 15px;
+   margin-top: 30px;
+ }
+ #borrar {
+   font-size: 1.1rem;
+   font-family:'Sora', sans-serif;
+   font-weight:400;
+   background-color: rgba(255, 255, 255, 0);
+   border: 2px solid #0f0e0e;
+   border-radius: 5px;
+   height: 70px;
+}
+#enviar {
+   font-size: 1.1rem;
+   font-family:'Sora', sans-serif;
+   border-radius: 5px;
+   background-color: #0f0e0e;
+   color: #fff1d9;   
+   font-weight:400;
+   height: 70px;}
+
+#enviar:hover{
+      background-color:#4e4e4e;
+      border-radius: 5px;
+      color: #fff1d9;
+}
+   
+ /* SECCION 2 */
+ .imagen_seccion2_home {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ 
+
+ /* FOOTER */
+ .footer{
+   background-color: #0f0e0e;
+   height: 45vh;
+ }
+
+ .logo_footer{
+   width: 80%;
+ }
+
+ .divisor{
+   border-right: 2px solid #a4a3a3;
+   height: 170px;
+ }
+/* COLUMNA 1 */
+ .icono{
+   color: #a4a3a3;
+   font-size: 3rem;
+   margin: 0 10px;
+ }
+
+ .icono:hover {
+   color: #fff1d9;
+ }
+
+/* COLUMNA 2 */
+ .listaMenu_footer{
+   list-style: none;
+   padding: initial;
+ }
+
+ .elementosLista{
+   margin: 10px 0;
+   text-align: center;
+ }
+
+ .enlace_footer{
+   color:#a4a3a3;
+   text-decoration: none;
+}
+
+.enlace_footer:hover {
+   color: #fff1d9;
+ }
+
+ /* DERECHOS */
+ .derechos{
+   text-align: center;
+   height: 5vh;
+   font-size: 12px; 
+   color: #828181;
+ }
+ 
+
+
+
+ /* TABLET */
+
+ @media screen and (min-width:768px) and (max-width: 1024px) {
+   body {
+      font-size: 17px;
+   }
+   
+   h1{font-size: 2.4rem;
+       font-weight:700;}
+   h2{font-size: 1.9rem;
+       font-weight:600;}
+   p{line-height: 30px;}
+
+   /* BANNER PRINCIPAÑ */
+   .titulo_portada_home{
+      padding-right: 20px;
+   }
+   .parrafos{
+      margin-top: 8px;
+      margin-bottom: 18px;
+   }
+   button {
+      font-size: 1rem;
+      padding: 15px 70px;
+   }
+
+   /* SECCION 1 */
+   .seccion-1_home{
+      background-image: initial;
+      background-attachment: initial;
+      margin-top: 15vh;
+      height: 75vh;
+      padding-bottom: 150px;
+      
+   }
+   .width_home{
+      max-width:90%;
+   }
+  
+    .contenedorImagenSeccion-2_home{
+      text-align: center;
+      display: initial;
+      position: relative;
+      top: -30px;
+     }
+   
+     .imagenSeccion2_home{
+      width: 30%;
+     }
+
+    /* FORMULARIO */
+    #comentarioHome{
+      height: 12vh;
+      margin-top: 20px;
+    }
+    
+    #borrar {
+      font-size: 0.9rem;
+      height: 50px;
+    }
+   
+    #enviar {
+      font-size: 0.9rem;
+      height: 50px;
+    }
+
+
+
+   
+   
+
+ }
+ 
+/* ------------------------MOBILE--------------------- */
+ @media screen and (max-width:767px) 
+{
+   body {
+      font-size: 15px;
+   }
+   
+   h1{font-size: 2rem;
+       font-weight:700;
+       }
+   h2{font-size: 1.7rem;
+       font-weight:600;
+       }
+   p{line-height: 25px;
+      }
+
+   .botonActivo{
+   border: initial;
+   border-radius: initial;
+   }
+
+   /* BANNER PRINCIPAL */
+   .titulo_portada_home{
+      padding-right: initial;
+   }
+
+   .parrafos{
+      margin-top: 5px;
+      margin-bottom:30px;
+   }
+   
+   .tituloPortada_home{
+      padding-top: 20px;
+      height: 45vh;
+      text-align: center;
+      order:1;
+      margin-bottom: 50px;
+   }
+
+   button {
+      font-size: 0.95rem;
+      padding: 15px 80px;
+  }
+
+  .contenedor_imagenPortada_home{
+   height: 55vh;
+   padding-top: 90px;
+   order:0;
+  }
+
+  .imagenPortada_home{
+   width: 85%;
+  }
+
+  /* SECCION 1 */
+  .width_home{
+   max-width: initial;
+ }
+
+ .seccion-1_home{
+   margin-top: 25vh;
+   height: 75vh;
+   padding-bottom: 220px;
+ }
+
+ .textosSeccion-2_home{
+   text-align: center;
+ }
+
+  .contenedorImagenSeccion-2_home{
+   text-align: center;
+   display: initial;
+   position: relative;
+   top: -30px;
+  }
+
+  .imagenSeccion2_home{
+   width: 50%;
+  }
+
+  .fondoSeccion-1_home{
+   background-image: initial;
+ }
+
+ /* FORMULARIO */
+ #comentarioHome{
+   height: 12vh;
+   margin-top: 20px;
+ }
+ 
+ #borrar {
+   font-size: 0.9rem;
+   height: 50px;
+ }
+
+ #enviar {
+   font-size: 0.9rem;
+   height: 50px;
+ }
+
+
+
+ /* SECCION 2 */
+ .titulosSeccion-2_home{
+   padding-top: 20px;
+   text-align: center;
+   order:1;
+   margin-bottom: 50px; 
+ }
+
+   .contenedor_imagenSeccion-2_home{
+   padding-top: 90px;
+   order:0;
+   }
+
+   .imagen_seccion2_home{
+   width: 85%;
+   }
+
+
+   /* FOOTER  */
+   .footer{
+      height: 80vh;
+   }
+
+   .logo_footer{
+      width: 60%;
+   }
+
+ .divisor{
+   border-right: initial;
+   }
+
+ .enlace_footer{
+   font-size: 20px;
+ }
+
+}
