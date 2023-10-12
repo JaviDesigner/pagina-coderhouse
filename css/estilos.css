@@ -79,6 +79,8 @@ p{line-height: 34px;
  }
  
  /* -------------ABOUTE ME------------*/
+ li > p{line-height: 50px;}
+
  .portada_aboutMe{
   background-image: url(../assets/img/Home_portada.png);
   background-size: 50%;
@@ -119,9 +121,27 @@ p{line-height: 34px;
 
 
  /* ------------PODCAST-------------- */
- .fondo_podcast{
+ .color-portada-card{
   background-color: #516bff;
  }
+
+ .divisor-horizontal{
+  border-bottom: 2px solid #dcdcdc;
+  width: 100%;
+  margin: 80px 0;
+ }
+ 
+ .fondo-portada_podcast{
+  background-color: #516bff;
+ }
+.alto-card_podcast{
+  height: 50vh;
+}
+
+.video_1_podcast{
+  width: 100%;  
+  height: 100%;
+}
 
  .max-width_podcast{
   max-width: 65vw;
@@ -152,15 +172,15 @@ p{line-height: 34px;
   font-size: 1.1rem;
   font-family:'Sora', sans-serif;
   border-radius: 5px;
-  background-color: #666464;
-  color: #fff1d9;   
+  background-color: #a1a0a0;
+  color: #525252;   
   font-weight:400;
   height: 70px;}
 
 #enviar_podcast:hover{
-     background-color:rgb(146, 146, 146);
+     background-color:#d6d6d6;
      border-radius: 5px;
-     color: #fff1d9;
+     color: #525252;
 }
 
  /*------------- SECCION 1 --------------*/
@@ -335,7 +355,7 @@ p{line-height: 34px;
     /* FORMULARIO */
     #comentarioHome{
       height: 12vh;
-      margin-top: 20px;
+      margin-top: 0;
     }
     
     #borrar {
@@ -380,8 +400,8 @@ p{line-height: 34px;
    }
 
    .parrafo{
-    padding-top: 0;
-    padding-bottom: 20PX;
+    padding-top: 20px;
+    padding-bottom: 45PX;
  }
 
    /* BANNER PRINCIPAL */
@@ -407,13 +427,13 @@ p{line-height: 34px;
   .contenedor_imagen-portada_home{
    height: 55vh;
    padding-left: 20px;
-   padding-top: 90px;
+   padding-top: 130px;
    order:0;
   }
 
-  .imagenPortada_home{
-   width: 85%;
-  }
+  .contenedor_imagen-portada_home > .img-fluid{
+    width: 100%;
+   }
 
   /* SECCION 1 */
   .width_home{
@@ -430,14 +450,14 @@ p{line-height: 34px;
  }
 
  .imagenSeccion2_home{
-  width: 40%;
+  width: 55%;
   margin-bottom: 30px;
  }
 
  /* FORMULARIO */
  #comentarioHome{
    height: 12vh;
-   margin-top: 20px;
+   margin-top: 0;
  }
  
  #borrar {
@@ -460,13 +480,13 @@ p{line-height: 34px;
  }
  
  .img-fluid{
-  width: 85%;
-  margin-bottom: 30px;
+  width: 90%;
  }
   .contenedor_imagen-seccion-2_home{
    text-align: center;
    display: initial;
    order:0;
+   padding-bottom: 30px;
   }
 
    /* FOOTER  */
@@ -480,7 +500,7 @@ p{line-height: 34px;
 
  .divisor{
    border-right: initial;
-   }
+  }
 
  .enlace_footer{
    font-size: 20px;
