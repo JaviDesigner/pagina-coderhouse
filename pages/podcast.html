@@ -52,84 +52,120 @@
         </section> 
 
         <!-- PORTADA -->
-        <section class="bannerPrincipal_podcast">
-        
-                <!-- textos para superponer en la imagen -->   
-                <div class="textosPortada_podcast">
+        <section class="SECCION container-fluid fondo_podcast">
 
+            <div class="container h-100">
+                <div class=" row h-100 w-100 d-flex align-items-center justify-content-center">
+                    <div class="titulo-portada_podcast flex-column d-flex justify-content-center">
                     <p>podcast</p>
                     <H1>ni pio de inglés</H1>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sunt rem in non fugit, odio eius autem, amet nihil et sequi odit sint reprehenderit labore. Blanditiis incidunt soluta non maiores.</p>
-
-                </div>    
-
-                <!-- imagen de fondo con una capa de color -->
-                <img src="../assets/img/portada podcast.png" alt="ilustracion gallina">
-                
-            </section>
+                    </div>
+                </div>
+            </div>
 
         </header>
     
     <main>
 
-        <h2>lista de podcast</h2>
+        <section class="container max-width_podcast">
 
-        <!-- CARD 1 -->
-        <div class="cardPodcast_podcast">
+            <h2 class="text-center py-5">lista de podcast</h2>
+            <!-- CARD 1 -->
+            <div class="row py-5">
 
-            <!-- CONTENIDO CARD -->
-            <div class="card">
+                <div class="card_podcast d-flex justify-content-center align-items-center">
+                    <!-- PORTADA PODCAST -->
+                    <div class="col-5 p-0">
+                        <img class="img-fluid" src="../assets/img/card podcast.png" alt="imagen portada podcast_1">
+                    </div>
 
-                <img src="../assets/img/card podcast.png" alt="imagen portada podcast_1">
-        
-                <!-- CONTENIDO CARD -->
-                <div class="textosCard_podcast">
-                    <h3>let`s go papis</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem quis accusamus, commodi sit delectus.</p>
-                    <a href="https://www.youtube.com/" class="boton claro oscuro">PLAY</a>
+                    <div class="col-7 p-5">
+                        <!-- CONTENIDO CARD -->
+                        <div class="textosCard_podcast">
+                            <h3>let`s go papis</h3>
+                            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem quis accusamus, commodi sit delectus.</p>
+                            <!-- boton -->
+                            <div>
+                                <a class="boton enlace" href="https://www.youtube.com/">PLAY</a>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
                 </div>
-             </div>
 
-             <!-- COMENTARIOS -->
-             <form action="404.html" method="post">
+                <!-- COMENTARIOS -->
+                <div class="container-fluid m-0 p-0">
+                    <div >   
+                        <form class="row " action="404.html" method="post">
+                            <!-- text area -->
+                            <div class="col-9 text-center">
+                                <textarea class="col-12" name="comentarioPodcast" id="comentarioPodcast"  placeholder="son bienvenidos los apuntes que tengas para my beautiful inglés "></textarea>
+                            </div>
+                        <!-- boton enviar -->
+                            <div class="col-3">
+                            <input class="col-12" type="submit" name="enviar" id="enviar_podcast" value="ENVIAR">
+                            </div>
 
-                <textarea name="comentarioPodcast" id="comentarioPodcast" cols="70" rows="3" placeholder="son bienvenidos los apuntes que tengas para my
-                beautiful inglés "></textarea>
+                        </form>
 
-                <input type="submit" name="enviar" id="enviar" value="ENVIAR">
-
-             </form>
-
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="cardPodcast_podcast">
-
-            <!-- CONTENIDO CARD -->
-            <div class="card">
-
-                <img src="../assets/img/card podcast.png" alt="imagen portada podcast_2">
-        
-                <!-- CONTENIDO CARD -->
-                <div class="textosCard_podcast">
-                    <h3>let`s go papis 2</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem quis accusamus, commodi sit delectus.</p>
-                    <a href="https://www.youtube.com/" class="boton claro oscuro">PLAY</a>
+                    </div>
+                
                 </div>
-             </div>
 
-             <!-- COMENTARIOS -->
-             <form action="404.html" method="post">
+            </div>
+            <!-- CARD 2 -->
+            <div class="row py-5">
 
-                <textarea name="comentarioPodcast" id="comentarioPodcast" cols="70" rows="3" placeholder="son bienvenidos los apuntes que tengas para my
-                beautiful inglés "></textarea>
+                <div class="card_podcast d-flex justify-content-center align-items-center">
+                    <!-- PORTADA PODCAST -->
+                    <div class="col-5 p-0">
+                        <img class="img-fluid" src="../assets/img/card podcast.png" alt="imagen portada podcast_1">
+                    </div>
 
-                <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+                    <div class="col-7 p-5">
+                        <!-- CONTENIDO CARD -->
+                        <div class="textosCard_podcast">
+                            <h3>let`s go papis</h3>
+                            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem quis accusamus, commodi sit delectus.</p>
+                            <!-- boton -->
+                            <div>
+                                <a class="boton enlace" href="https://www.youtube.com/">PLAY</a>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                </div>
 
-             </form>
+                <!-- COMENTARIOS -->
+                <div class="container-fluid m-0 p-0">
+                    <div >   
+                        <form class="row " action="404.html" method="post">
+                            <!-- text area -->
+                            <div class="col-9 text-center">
+                                <textarea class="col-12" name="comentarioPodcast" id="comentarioPodcast"  placeholder="son bienvenidos los apuntes que tengas para my beautiful inglés "></textarea>
+                            </div>
+                        <!-- boton enviar -->
+                            <div class="col-3">
+                            <input class="col-12" type="submit" name="enviar" id="enviar_podcast" value="ENVIAR">
+                            </div>
 
-        </div>
+                        </form>
+
+                    </div>
+                
+                </div>
+
+            </div>
+            
+
+            
+            
+
+
+        </section>
 
     </main>
 
