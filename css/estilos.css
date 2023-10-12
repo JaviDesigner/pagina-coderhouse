@@ -13,10 +13,14 @@ body {
 }
 
 h1{font-size: 3.7rem;
-    font-weight:700;}
+  font-weight:700;
+  margin: 0;}
 h2{font-size: 2.4rem;
-    font-weight:600;}
-p{line-height: 34px;}
+  font-weight:600;
+  margin: 0;}
+p{line-height: 34px;
+  margin-top:10px;
+  margin-bottom: 10px;}
 
 .SECCION{
    height: 100vh;
@@ -41,46 +45,83 @@ p{line-height: 34px;}
     background-color: white;
 }
 
+.paddingTexto{
+  padding-right: 80px;
+}
+
 /* BOTONES */
 .botonActivo{
    border: 2px solid #797979;
    border-radius: 5px;
 }
-button {
-    background-color: #0f0e0e;   
-    font-size: 1.2rem;
-    text-align: center;
+
+.boton {
+    background-color: #0f0e0e;
     padding: 30px 110px;
     border-radius: 5px;
+    text-align: center;
     color: #fff1d9;
+    text-decoration: none;
+    font-size: 1.2rem;    
 }
+
 .enlace:hover {
    background-color:#516bff;
    border-radius: 5px;
    color: #0f0e0e;
  }
 
-/* BANNER */
-.altoBanner{
-   height: 100vh;
-}
 
+/* ------HOME------ */
+
+/* BANNER PRINCIPAL*/
 /* TITULO */
-.titulo_portada_home{
-   padding-right: 100px;
-}
-.parrafos{
-    margin-top: 15px;
-    margin-bottom: 30px;
+.parrafo{
+    padding-top: 20px;
+    padding-bottom: 55px;
  }
  
- /* IMAGEN */
- .imagenPortada_home {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+ /* ABOUTE ME */
+ .portada_aboutMe{
+  background-image: url(../assets/img/Home_portada.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 55%;
+  background-position-x: 80%;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+ }
+.titulo-portada_aboutMe{
+  padding-right: 20%;
+  padding-top: 15%;
+
+}
+
+ .h1_aboutMe{
+  width: 30vw;
+  height: 15vh;
+  padding: 20px 0;
+  margin-bottom: 20px;
+ 
+  background-color: white;
+  border-radius: 50px 0 50px 50px;
+ }
+
+.p_aboutMe{
+  width:30vw;
+  height:15vh;
+  padding: 40px 0;
+  background-color: white;
+  border-radius: 50px 0 50px 50px;
+ }
+
+ /* REDES SOCIALES */
+ .redesSociles_internas{
+  font-size: 3rem;
+  color: #516bff;
+  margin-top: -30px;
  }
  
  /*------------- SECCION 1 --------------*/
@@ -218,14 +259,11 @@ button {
        font-weight:600;}
    p{line-height: 30px;}
 
-   /* BANNER PRINCIPAÑ */
+   /* BANNER PRINCIPAL */
    .titulo_portada_home{
       padding-right: 20px;
    }
-   .parrafos{
-      margin-top: 8px;
-      margin-bottom: 18px;
-   }
+
    button {
       font-size: 1rem;
       padding: 15px 70px;
@@ -235,9 +273,9 @@ button {
    .seccion-1_home{
       background-image: initial;
       background-attachment: initial;
-      margin-top: 15vh;
-      height: 75vh;
-      padding-bottom: 150px;
+/*       margin-top: 15vh; */
+      height: 100vh;
+ /*      padding-bottom: 150px; */
       
    }
    .width_home{
@@ -247,8 +285,8 @@ button {
     .contenedorImagenSeccion-2_home{
       text-align: center;
       display: initial;
-      position: relative;
-      top: -30px;
+    /*   position: relative;
+      top: -30px; */
      }
    
      .imagenSeccion2_home{
@@ -292,20 +330,27 @@ button {
        }
    p{line-height: 25px;
       }
+    
+  .SECCION{
+    height: 100VH;
+  }
 
    .botonActivo{
    border: initial;
    border-radius: initial;
    }
 
+   .parrafo{
+    padding-top: 0;
+    padding-bottom: 20PX;
+ }
+
    /* BANNER PRINCIPAL */
    .titulo_portada_home{
       padding-right: initial;
    }
-
-   .parrafos{
-      margin-top: 5px;
-      margin-bottom:30px;
+   .paddingTexto{
+    padding: 0;
    }
    
    .tituloPortada_home{
@@ -315,12 +360,12 @@ button {
       margin-bottom: 50px;
    }
 
-   button {
+  .boton{
       font-size: 0.95rem;
-      padding: 15px 80px;
+      padding: 20px 80px;
   }
 
-  .contenedor_imagenPortada_home{
+  .contenedor_imagen-portada_home{
    height: 55vh;
    padding-left: 20px;
    padding-top: 90px;
@@ -337,28 +382,17 @@ button {
  }
 
  .seccion-1_home{
-   margin-top: 25vh;
-   height: 75vh;
-   padding-bottom: 220px;
- }
-
- .textosSeccion-2_home{
-   text-align: center;
- }
-
-  .contenedorImagenSeccion-2_home{
-   text-align: center;
-   display: initial;
-   position: relative;
-   top: -30px;
-  }
-
-  .imagenSeccion2_home{
-   width: 50%;
-  }
-
-  .fondoSeccion-1_home{
+   height: 100vh;
    background-image: initial;
+ }
+ .contenedorImagenSeccion-2_home{
+  text-align: center;
+  display: initial;
+ }
+
+ .imagenSeccion2_home{
+  width: 40%;
+  margin-bottom: 30px;
  }
 
  /* FORMULARIO */
@@ -380,22 +414,21 @@ button {
 
 
  /* SECCION 2 */
- .titulosSeccion-2_home{
-   padding-top: 20px;
-   text-align: center;
+ .textos-seccion-2_home{
    order:1;
-   margin-bottom: 50px; 
+   text-align: center;
+   padding: 0 20px;
  }
-
-   .contenedor_imagenSeccion-2_home{
-   padding-top: 90px;
+ 
+ .img-fluid{
+  width: 85%;
+  margin-bottom: 30px;
+ }
+  .contenedor_imagen-seccion-2_home{
+   text-align: center;
+   display: initial;
    order:0;
-   }
-
-   .imagen_seccion2_home{
-   width: 85%;
-   }
-
+  }
 
    /* FOOTER  */
    .footer{

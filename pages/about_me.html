@@ -11,9 +11,9 @@
 </head>
 <body>
     
-    <header class="container-fluid">
-            <!-- MENU -->
-            <section class="fixed-top shadow-sm">
+    <header class="container-fluid fondoClaro">
+        <!-- MENU -->
+        <section class="fixed-top shadow-sm">
                       
                         <!-- NAVBAR BOOTSTRAP -->
                         <nav class="navbar navbar-expand-lg navbar-light colorFondoMenu">
@@ -49,70 +49,93 @@
                             </div>
                         </nav>
                             
-            </section>
+        </section>
        <!-- PORTADA -->
-        <section class="bannerPrincipal aboutMe">
+        <section class="SECCION container-fluid">
 
-            <!-- texto para superponer sobre la imagen -->
-            <div class="tituloPortada_aboutMe">
-                <H1>i`m javi</H1>
-                <p>nice to meet u</p>
+            <div class="portada_aboutMe container">
+                <div class="titulo-portada_aboutMe h-100 w-100 d-flex justify-content-center align-items-center">
+                    <div>
+                        <H1 class="h1_aboutMe">i`m javi</H1>
+                        <p class="p_aboutMe">nice to meet u</p>
+                    </div>
+                </div>
             </div>
-           
-            <img src="../assets/img/HOME_PORTADA.png" alt="ilustracion personaje sonriendo">
 
         </section>
    
     </header>
     
     <main>
-
         <!-- SECCION 1 -->
-        <section class="seccion-1_aboutMe">
-            
-            <!-- TEXTOS -->
-            <div class="textosSeccion1_aboutMe">
-                <h2>about me</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Possimus, nihil! Aperiam dolorum officia dicta amet autem est esse possimus sapiente!</p>
-            
-                <div class="redesSociles_internas">
-                    <a href="https://www.linkedin.com/in/javier-diaz-carre%C3%B1o-794b9a217/">
-                        <iconify-icon icon="mdi:linkedin"></iconify-icon></a>
-        
-                    <a href="https://www.instagram.com/javi_sketches/">
-                        <iconify-icon icon="mdi:instagram"></iconify-icon></a>
-        
-                    <a href="https://www.behance.net/JAVIERDIAZCARRENO">
-                        <iconify-icon icon="ant-design:behance-circle-filled"></iconify-icon></a>
+        <section class="SECCION container">
+            <div class="w-100 h-100 row d-flex align-items-center justify-content-center">
+
+                <!-- TEXTOS -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center justify-content-center paddingTexto"> 
+                    <div class="">
+                        <!-- textos -->
+                        <div>
+                            <h2>about me</h2>
+                            <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Possimus, nihil! Aperiam dolorum officia dicta amet autem est esse possimus sapiente!</p>
+                        </div>
+                
+                        <!-- redes sociales -->
+                        <div class="redesSociles_internas">
+                            <a href="https://www.linkedin.com/in/javier-diaz-carre%C3%B1o-794b9a217/">
+                                <iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+                
+                            <a href="https://www.instagram.com/javi_sketches/">
+                                <iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                
+                            <a href="https://www.behance.net/JAVIERDIAZCARRENO">
+                                <iconify-icon icon="ant-design:behance-circle-filled"></iconify-icon></a>
+                        </div>
+                     </div>
+                
+                </div>
+
+                <!-- IMAGEN -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="img-fluid" src="../assets/img/HOME_PORTADA.png" alt="ilustracion personaje cabeza abierta saliendole el universo">
                 </div>
 
             </div>
             
-            <!-- IMG -->
-            <img src="../assets/img/HOME_PORTADA.png" alt="ilustracion personaje cabeza abierta saliendole el universo">
 
         </section>
 
         <!-- SECCION 2 -->
-        <section class="seccion-2_metas">
+        <section class="container-fluid fondoClaro">
+          
+            <div class="SECCION container">
 
-            <!-- IMG -->
-            <img src="../assets/img/Seccion_2_Home.png" alt="montaña con una bandera en la cima">
-            
-            <!-- TEXTOS -->
-            <div class="textosSeccion2_aboutMe">
-                <h2>metas</h2>
-                <ul>
-                    <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
-                    <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
-                    <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
-                    <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
-                    <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
-                </ul>
+                <div class="row h-100 w-100 d-flex align-items-center">
 
-            <a href="./progress.html" class="boton claro oscuro">VER MI PROGRESS</a>
-            </div>
+                    <!-- IMAGEN -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <img class="img-fluid" src="../assets/img/Seccion_2_Home.png" alt="montaña con una bandera en la cima">
+                    </div>               
+                    
+                    <!-- TEXTOS -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <h2>metas</h2>
+                        <ul class="parrafo">
+                            <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
+                            <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
+                            <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
+                            <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
+                            <li><p>esta es un meta para aprender inglés por cumplir.</p></li>
+                        </ul>
+
+                        <div><a class="boton enlace" href="./progress.html">VER MI PROGRESS</a></div>
+                   
+                    </div>
+
+                 </div>
+
+             </div>
 
         </section>
 
