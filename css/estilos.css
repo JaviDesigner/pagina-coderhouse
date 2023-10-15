@@ -183,6 +183,74 @@ p{line-height: 34px;
      color: #525252;
 }
 
+
+/* ------------------------------------------ */
+
+/* -----------------PROGRESS-------------- */
+.finalizadas_progress{
+  background-color: #61af8d;
+}
+
+/* iconos lista */
+.enCurso-icono{
+  list-style-image: url('../assets/img/sand-clock.png');
+}
+.loading-icono{
+  list-style-image: url('../assets/img/check-mark.png');
+}
+
+/* parrafos lista */
+.enCurso-icono > li > p{
+  margin-bottom: 30px;
+}
+.loading-icono > li > p{
+  margin-bottom: 30px;
+}
+
+.enCurso_progress{
+  background-color: #ffb01a;
+}
+.justify_progress{
+  justify-content: center;
+}
+.padding-h2_progress{
+  padding-bottom: 40px;
+}
+
+/* seccion 2 */
+.contenedor-galeria_progress{
+  height: 70vh;
+}
+.carousel-control-prev {
+  left: -130PX;
+}
+.carousel-control-next{
+  right: -130px;
+}
+.carousel-control-prev-icon {
+  background-image: url(../assets/img/arrow-left.png);
+}
+.carousel-control-next-icon{
+  background-image: url(../assets/img/arrow-right.png);
+
+}
+/* --------------------------------------------- */
+
+/* --------------------CONTACT--------------------- */
+.alto-input_progress{
+  height: 65px;
+  background-color:white;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  border-color: rgba(255, 255, 255, 0);
+}
+.sugerencia > #comentarioHome{
+  background-color: white;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+
  /*------------- SECCION 1 --------------*/
  .seccion-1_home{
    height: 100vh;
@@ -470,8 +538,6 @@ p{line-height: 34px;
    height: 50px;
  }
 
-
-
  /* SECCION 2 */
  .textos-seccion-2_home{
    order:1;
@@ -505,5 +571,48 @@ p{line-height: 34px;
  .enlace_footer{
    font-size: 20px;
  }
+
+ /* -----PROGRESS----- */
+
+ /* seccion 1 */
+ .lista-seccion-1_progress{
+  height: 45vh;
+ }
+
+.justify_progress{
+  justify-content: left;
+}
+
+/* parrafos lista */
+.enCurso-icono > li > p{
+  margin-bottom: 0;
+  text-align: left;
+}
+.loading-icono > li > p{
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* iconos lista */
+.enCurso-icono{
+  list-style-image: initial;
+}
+.loading-icono{
+  list-style-image: initial;
+}
+
+.finalizadas_progress, .enCurso_progress{
+  padding-top: 40px;
+}
+
+.padding-h2_progress{
+padding-bottom: 10px;
+padding-top: 10px;
+}
+ /* seccion 2 */
+ .titulos-seccion-2_progress{
+  height: 33vh;
+}
+
 
 }
