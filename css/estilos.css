@@ -23,6 +23,9 @@ h3{font-size: 1.6rem;
   margin: 0;}
 p{line-height: 34px;
  margin: 0;}
+ span{
+  font-weight: 600;
+ }
 
 .SECCION{
    height: 100vh;
@@ -82,7 +85,7 @@ p{line-height: 34px;
  li > p{line-height: 50px;}
 
  .portada_aboutMe{
-  background-image: url(../assets/img/Home_portada.png);
+  background-image: url(../assets/img/about\ me\ portada.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -142,8 +145,12 @@ p{line-height: 34px;
  }
  
  .fondo-portada_podcast{
-  background-color: #516bff;
+  background-image: url(../assets/img/ni\ pio\ de\ ingles.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
  }
+
 .alto-card_podcast{
   height: 50vh;
 }
