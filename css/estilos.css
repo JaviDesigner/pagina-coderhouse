@@ -33,6 +33,17 @@ span{font-weight: 600;
 .fondoClaro{
   background-color: #fff1d9;
 }
+.text-center-propio{
+  text-align: left;
+}
+
+.img-propio{
+  width: 90%;
+}
+
+.alinear-nobs{
+ text-align: left;
+}
 
 /* ---------------PAGINA 404 -------------*/
 .error404{
@@ -50,7 +61,7 @@ span{font-weight: 600;
 }
 
 .paddingTexto{
-  padding-right: 80px;
+  padding-right: 5rem;
 }
 
 /* BOTONES */
@@ -61,7 +72,7 @@ span{font-weight: 600;
 
 .boton {
     background-color: #0f0e0e;
-    padding: 30px 110px;
+    padding: 2rem 7rem;
     border-radius: 5px;
     text-align: center;
     color: #fff1d9;
@@ -90,12 +101,14 @@ span{font-weight: 600;
   background-position-y: 55%;
   background-position-x: 80%;
   text-align: center;
-  
   height: 100vh;
  }
 .titulo-portada_aboutMe{
   padding-right: 20%;
   padding-top: 10%;
+}
+.padding-titulos-aboutMe{
+  padding: 0 4rem;
 }
  .h1_aboutMe{
   width: 30vw;
@@ -128,16 +141,11 @@ span{font-weight: 600;
   background-color: #516bff;
  }
 
- .divisor-horizontal{
-  border-bottom: 2px solid #dcdcdc;
-  width: 100%;
-  margin: 80px 0;
- }
  .color-1-divisor_podcast{
-  background-color: #f4f4f4;
+  background-color: #e6e6e6;
  }
  .color-2-divisor_podcast{
-  background-color: #e6e6e6;
+  background-color: #d0d0d0;
  }
  #comentarioPodcast{
  border-color: #52525200;
@@ -168,6 +176,9 @@ span{font-weight: 600;
 
  .titulo-portada_podcast{
   max-width: 50vw;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  padding: 3rem;
  }
 .card_podcast{
   margin-bottom: 40px;
@@ -191,13 +202,13 @@ span{font-weight: 600;
   font-family:'Sora', sans-serif;
   border-radius: 5px;
   border-color: #0f0e0e00;
-  background-color: #c2c2c2;
-  color: #525252;   
+  background-color: #ffffff;
+  color: #8b8b8b;   
   font-weight:400;
   height: 70px;}
 
 #enviar_podcast:hover{
-     background-color:#d6d6d6;
+     background-color:#e3e3e3;
      border-radius: 5px;
      color: #525252;
 }
@@ -269,7 +280,7 @@ span{font-weight: 600;
  /*SECCION 1 */
  .seccion-1_home{
    height: 100vh;
-   background-image: url(../assets/img/fondo\ seccion\ 1\ HOME.png);
+   background-image: url(../assets/img/fondo\ seccion\ 1\ home.png);
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -476,6 +487,12 @@ span{font-weight: 600;
     height: 100VH;
   }
 
+  .alinear-nobs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
    .botonActivo{
    border: initial;
    border-radius: initial;
@@ -485,6 +502,13 @@ span{font-weight: 600;
     padding-top: 20px;
     padding-bottom: 45PX;
  }
+ .text-center-propio{
+  text-align: center;
+ }
+
+ .img-propio{
+  width: 100%;
+}
 
    /* BANNER PRINCIPAL */
    .titulo_portada_home{
@@ -642,6 +666,9 @@ padding-top: 10px;
  .titulo-portada_aboutMe{
   padding-right: 0;
   padding-top: 110%;
+}
+.padding-titulos-aboutMe{
+  padding: 0 1rem;
 }
 
  .h1_aboutMe{
