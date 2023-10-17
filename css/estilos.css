@@ -245,19 +245,7 @@ span{font-weight: 600;
 .contenedor-galeria_progress{
   height: 70vh;
 }
-.carousel-control-prev {
-  left: -130PX;
-}
-.carousel-control-next{
-  right: -130px;
-}
-.carousel-control-prev-icon {
-  background-image: url(../assets/img/arrow-left.png);
-}
-.carousel-control-next-icon{
-  background-image: url(../assets/img/arrow-right.png);
 
-}
 /* --------------------------------------------- */
 
 /* --------------------CONTACT--------------------- */
@@ -280,7 +268,7 @@ span{font-weight: 600;
  /*SECCION 1 */
  .seccion-1_home{
    height: 100vh;
-   background-image: url(../assets/img/fondo\ seccion\ 1\ home.png);
+   background-image: url(../assets/img/fondo-seccion-1-home.png);
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
