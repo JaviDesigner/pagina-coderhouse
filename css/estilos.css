@@ -142,14 +142,14 @@ span{font-weight: 600;
  }
 
  .color-1-divisor_podcast{
-  background-color: #e6e6e6;
+  background-color: white;
  }
  .color-2-divisor_podcast{
-  background-color: #d0d0d0;
+  background-color:#fff1d9;
  }
  #comentarioPodcast{
  border-color: #52525200;
-  background-color: #ffffff;
+  background-color: #e9e9e9;
  }
  
  .fondo-portada_podcast{
@@ -202,7 +202,7 @@ span{font-weight: 600;
   font-family:'Sora', sans-serif;
   border-radius: 5px;
   border-color: #0f0e0e00;
-  background-color: #ffffff;
+  background-color: #d2d2d2;
   color: #8b8b8b;   
   font-weight:400;
   height: 70px;}
