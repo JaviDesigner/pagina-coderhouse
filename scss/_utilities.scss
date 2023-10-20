@@ -1,0 +1,81 @@
+/* UTILIDADES */
+.SECCION{
+    height: 100vh;
+ }
+
+.fondoClaro{
+  background-color: $color-primario-claro;
+}
+.text-align-propio{
+  text-align: left;
+}
+
+.img-propio{
+  width: 90%;
+}
+
+.align-no-bs{
+ text-align: left;
+}
+
+.parrafo{
+    padding-top: 20px;
+    padding-bottom: 55px;
+ }
+
+ .paddingTexto{
+    padding-right: 5rem;
+  }
+  .boton {
+    background-color:$color-primario-oscuro;
+    padding: 2rem 7rem;
+    border-radius: 5px;
+    text-align: center;
+    color: $color-primario-claro;
+    text-decoration: none;
+    font-size: 1.2rem;    
+}
+.enlace:hover {
+  background-color:#516bff;
+  border-radius: 5px;
+  color: $color-primario-oscuro;
+}
+
+@media screen and (max-width:767px) 
+{
+
+  .SECCION{
+    height: 100VH;
+  }
+
+  .align-no-bs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-align-propio{
+    text-align: center;
+   }
+  
+   .img-propio{
+    width: 100%;
+  }
+  .img-fluid{
+    width: 90%;
+   }
+
+  .parrafo{
+    padding-top: 20px;
+    padding-bottom: 45PX;
+ }
+ .paddingTexto{
+    padding: 0;
+   }
+
+   .boton{
+    font-size: 0.95rem;
+    padding: 20px 80px;
+}
+
+}

@@ -1,99 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;600;700;800&display=swap');
-
-/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;400;600;700;800&display=swap");
+/*------------ BODY-------------- */
+/* pureba */
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 body {
-   font-family:'Sora', sans-serif;
-   font-size: 20px;
-   color: #0f0e0e;
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  color: #0f0e0e;
 }
 
-h1{font-size: 3.7rem;
-  font-weight:700;
-  margin: 0;}
-h2{font-size: 2.4rem;
-  font-weight:600;
-  margin: 0;}
-h3{font-size: 1.6rem;
-  font-weight:600;
-  margin: 0;}
-p{line-height: 34px;
- margin: 0;}
-span{font-weight: 600;
- }
-
-.SECCION{
-   height: 100vh;
+h1 {
+  font-size: 3.7rem;
+  font-weight: 700;
+  margin: 0;
 }
 
-.fondoClaro{
-  background-color: #fff1d9;
-}
-.text-center-propio{
-  text-align: left;
-}
-
-.img-propio{
-  width: 90%;
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
 }
 
-.alinear-nobs{
- text-align: left;
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
 }
 
-/* ---------------PAGINA 404 -------------*/
-.error404{
-  width: 100vw; 
-  object-fit: cover;
-}
-/* --------------------------------------- */
-/* MENU */
-.textoMenu{
-   font-size: 16px;
+p {
+  line-height: 34px;
+  margin: 0;
 }
 
-.colorFondoMenu{
-    background-color: white;
+span {
+  font-weight: 600;
 }
 
-.paddingTexto{
-  padding-right: 5rem;
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  p {
+    line-height: 25px;
+  }
+}
+/* -----------HEADER--------------- */
+/* nav bar */
+.textoMenu {
+  font-size: 16px;
 }
 
-/* BOTONES */
-.botonActivo{
-   border: 2px solid #797979;
-   border-radius: 5px;
+.colorFondoMenu {
+  background-color: white;
 }
 
-.boton {
-    background-color: #0f0e0e;
-    padding: 2rem 7rem;
-    border-radius: 5px;
+.botonActivo {
+  border: 2px solid #797979;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .botonActivo {
+    border: initial;
+    border-radius: initial;
+  }
+  /* BANNER PRINCIPAL */
+  .tituloPortada_home {
+    height: 45vh;
     text-align: center;
-    color: #fff1d9;
-    text-decoration: none;
-    font-size: 1.2rem;    
+    order: 1;
+    margin-bottom: 50px;
+  }
+  .contenedor_imagen-portada_home {
+    height: 55vh;
+    padding-left: 20px;
+    padding-top: 130px;
+    order: 0;
+  }
+  .contenedor_imagen-portada_home > .img-fluid {
+    width: 100%;
+  }
+}
+/* ------------------HOME------------------- */
+/* SECCION 1 */
+.seccion-1_home {
+  height: 100vh;
+  background-image: url(../assets/img/fondo-seccion-1-home.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.enlace:hover {
-   background-color:#516bff;
-   border-radius: 5px;
-   color: #0f0e0e;
- }
+.width_home {
+  max-width: 45vw;
+}
 
-.parrafo{
-    padding-top: 20px;
-    padding-bottom: 55px;
- }
- 
- /* -------------ABOUTE ME------------*/
+.contenedorImagenSeccion-2_home {
+  display: none;
+}
 
- .portada_aboutMe{
+/* FORMULARIO */
+.comentarios {
+  padding: 0 12px;
+}
+
+#comentarioHome {
+  height: 20vh;
+  background-color: #ffffff;
+  font-size: 1rem;
+  border-color: #0f0e0e;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+#borrar {
+  font-size: 1.1rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #0f0e0e;
+  border-radius: 5px;
+  height: 70px;
+}
+
+#enviar {
+  font-size: 1.1rem;
+  font-family: "Sora", sans-serif;
+  border-radius: 5px;
+  background-color: #0f0e0e;
+  color: #fff1d9;
+  font-weight: 400;
+  height: 70px;
+}
+
+#enviar:hover {
+  background-color: #4e4e4e;
+  border-radius: 5px;
+  color: #fff1d9;
+}
+
+/* SECCION 2 */
+.imagen_seccion2_home {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .width_home {
+    max-width: initial;
+  }
+  .seccion-1_home {
+    height: 100vh;
+    background-image: initial;
+  }
+  .contenedorImagenSeccion-2_home {
+    text-align: center;
+    display: initial;
+  }
+  .imagenSeccion2_home {
+    width: 55%;
+    margin-bottom: 30px;
+  }
+  #comentarioHome {
+    height: 12vh;
+    margin-top: 0;
+  }
+  #borrar {
+    font-size: 0.9rem;
+    height: 50px;
+  }
+  #enviar {
+    font-size: 0.9rem;
+    height: 50px;
+  }
+  .textos-seccion-2_home {
+    order: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .contenedor_imagen-seccion-2_home {
+    text-align: center;
+    display: initial;
+    order: 0;
+    padding-bottom: 30px;
+  }
+}
+/* -------------ABOUTE ME------------*/
+.portada_aboutMe {
   background-image: url(../assets/img/about\ me\ portada.png);
   background-size: 40%;
   background-repeat: no-repeat;
@@ -102,15 +214,18 @@ span{font-weight: 600;
   background-position-x: 80%;
   text-align: center;
   height: 100vh;
- }
-.titulo-portada_aboutMe{
+}
+
+.titulo-portada_aboutMe {
   padding-right: 20%;
   padding-top: 10%;
 }
-.padding-titulos-aboutMe{
+
+.padding-titulos-aboutMe {
   padding: 0 4rem;
 }
- .h1_aboutMe{
+
+.h1_aboutMe {
   width: 30vw;
   height: 15vh;
   padding: 20px 0;
@@ -118,76 +233,178 @@ span{font-weight: 600;
   background-color: white;
   border-radius: 50px 0 50px 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
- }
-.p_aboutMe{
-  width:30vw;
-  height:15vh;
+}
+
+.p_aboutMe {
+  width: 30vw;
+  height: 15vh;
   padding: 40px 0;
   background-color: rgb(246, 246, 246);
   border-radius: 50px 0 50px 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
- }
- /* REDES SOCIALES */
- .redesSociles_internas{
+}
+
+.redesSociles_internas {
   font-size: 3rem;
   color: #516bff;
   margin-top: -30px;
- }
- /* ------------------------- */
+}
 
+@media screen and (max-width: 767px) {
+  .portada_aboutMe {
+    background-size: contain;
+    background-position-y: 25%;
+    background-position-x: 10%;
+    text-align: center;
+  }
+  .titulo-portada_aboutMe {
+    padding-right: 0;
+    padding-top: 110%;
+  }
+  .padding-titulos-aboutMe {
+    padding: 0 1rem;
+  }
+  .h1_aboutMe {
+    width: 60vw;
+    height: 10vh;
+    padding: 18px 0;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 35px 0 35px 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+  }
+  .p_aboutMe {
+    width: 60vw;
+    height: 10vh;
+    padding: 25px 0;
+    background-color: rgb(246, 246, 246);
+    border-radius: 35px 0 35px 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+  }
+  .texto-seccion-1_aboutMe {
+    order: 1;
+    text-align: center;
+  }
+  .img-seccion-1_aboutMe {
+    order: 0;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  .img-seccion-2_aboutMe {
+    width: 95%;
+  }
+}
+/* -----------------PROGRESS-------------- */
+.enCurso_progress {
+  max-width: 95%;
+  max-height: 100%;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+}
 
- /* ------------PODCAST-------------- */
- .color-portada-card{
+.finalizadas_progress {
+  max-width: 95%;
+  max-height: 100%;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: #97c578;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+.padding-h2_progress {
+  padding-bottom: 20px;
+}
+
+.contenedor-galeria_progress {
+  height: 70vh;
+}
+
+@media screen and (max-width: 767px) {
+  /* SECCION 1 */
+  .lista-seccion-1_progress {
+    height: 45vh;
+  }
+  .justify_progress {
+    justify-content: left;
+  }
+  .enCurso-icono > li > p {
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 35px;
+  }
+  .loading-icono > li > p {
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 35px;
+  }
+  .finalizadas_progress, .enCurso_progress {
+    padding-top: 40px;
+  }
+  .padding-h2_progress {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .titulos-seccion-2_progress {
+    height: 33vh;
+  }
+}
+/* ------------PODCAST-------------- */
+.color-portada-card {
   background-color: #516bff;
- }
+}
 
- .color-1-divisor_podcast{
+.color-1-divisor_podcast {
   background-color: white;
- }
- .color-2-divisor_podcast{
-  background-color:#fff1d9;
- }
- #comentarioPodcast{
- border-color: #52525200;
+}
+
+.color-2-divisor_podcast {
+  background-color: #fff1d9;
+}
+
+#comentarioPodcast {
+  border-color: rgba(82, 82, 82, 0);
   background-color: #e9e9e9;
- }
- 
- .fondo-portada_podcast{
+}
+
+.fondo-portada_podcast {
   background-image: url(../assets/img/ni\ pio\ de\ ingles.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
- }
+}
 
-.alto-card_podcast{
+.alto-card_podcast {
   height: 50vh;
 }
 
-.video_1_podcast{
-  width: 100%;  
+.video_1_podcast {
+  width: 100%;
   height: 100%;
 }
 
- .max-width_podcast{
+.max-width_podcast {
   max-width: 65vw;
   padding: 50px 0;
-  
- }
+}
 
- .titulo-portada_podcast{
+.titulo-portada_podcast {
   max-width: 50vw;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   padding: 3rem;
- }
-.card_podcast{
+}
+
+.card_podcast {
   margin-bottom: 40px;
   border-radius: 10px;
-  background-color:#ffb01a;
+  background-color: #ffb01a;
 }
 
 /* comentarios */
-#comentarioPodcast{
+#comentarioPodcast {
   width: 100%;
   height: 70px;
   font-size: 1rem;
@@ -196,504 +413,190 @@ span{font-weight: 600;
   text-align: center;
 }
 
-
 #enviar_podcast {
   font-size: 1.1rem;
-  font-family:'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   border-radius: 5px;
-  border-color: #0f0e0e00;
+  border-color: #0f0e0e;
   background-color: #d2d2d2;
-  color: #8b8b8b;   
-  font-weight:400;
-  height: 70px;}
-
-#enviar_podcast:hover{
-     background-color:#e3e3e3;
-     border-radius: 5px;
-     color: #525252;
+  color: #8b8b8b;
+  font-weight: 400;
+  height: 70px;
 }
 
-
-/* ------------------------------------------ */
-
-/* -----------------PROGRESS-------------- */
-
-
-.enCurso_progress{
-  max-width: 95%;
-  max-height: 100%;
-  border-radius: 15px;
-  padding: 40px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.050);
+#enviar_podcast:hover {
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  color: #525252;
 }
-
-.finalizadas_progress{
-  max-width: 95%;
-  max-height: 100%;
-  border-radius: 15px;
-  padding: 40px;
-  background-color: #97c578;
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.100);
-}
-
-.padding-h2_progress{
-  padding-bottom: 20px;
-}
-
-/* seccion 2 */
-.contenedor-galeria_progress{
-  height: 70vh;
-}
-
-/* --------------------------------------------- */
 
 /* --------------------CONTACT--------------------- */
-.alto-input_progress{
+.alto-input_progress {
   height: 65px;
-  background-color:white;
+  background-color: white;
   border-radius: 5px;
   padding-left: 15px;
   font-size: 16px;
   border-color: rgba(255, 255, 255, 0);
 }
-.sugerencia > #comentarioHome{
+
+.sugerencia > #comentarioHome {
   background-color: white;
   border-color: rgba(255, 255, 255, 0);
 }
 
-/* -------------------------------------------------- */
-
-
- /*SECCION 1 */
- .seccion-1_home{
-   height: 100vh;
-   background-image: url(../assets/img/fondo-seccion-1-home.png);
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover; 
- }
- .width_home{
-   max-width: 45vw;
- }
- 
- .contenedorImagenSeccion-2_home{
-   display: none;
- }
-
-
- /* FORMULARIO */
- .comentarios{
-   padding: 0 12px;
- }
- #comentarioHome{
-   height: 20vh;
-   background-color: #ffffff;
-   font-size: 1rem;
-   border-color: #0f0e0e00;
-   border-radius: 5px;
-   padding-top: 15px;
-   padding-left: 15px;
-   margin-top: 30px;
- }
- #borrar {
-   font-size: 1.1rem;
-   font-family:'Sora', sans-serif;
-   font-weight:400;
-   background-color: rgba(255, 255, 255, 0);
-   border: 2px solid #0f0e0e;
-   border-radius: 5px;
-   height: 70px;
+/*---------------------- FOOTER---------------- */
+.footer {
+  background-color: #0f0e0e;
+  height: 45vh;
 }
-#enviar {
-   font-size: 1.1rem;
-   font-family:'Sora', sans-serif;
-   border-radius: 5px;
-   background-color: #0f0e0e;
-   color: #fff1d9;   
-   font-weight:400;
-   height: 70px;}
 
-#enviar:hover{
-      background-color:#4e4e4e;
-      border-radius: 5px;
-      color: #fff1d9;
+.logo_footer {
+  width: 80%;
 }
-   
- /* ------------------SECCION 2 -------------------*/
- .imagen_seccion2_home {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
- }
 
- /*---------------------- FOOTER---------------- */
- .footer{
-   background-color: #0f0e0e;
-   height: 45vh;
- }
+.divisor {
+  border-right: 2px solid #a4a3a3;
+  height: 170px;
+}
 
- .logo_footer{
-   width: 80%;
- }
-
- .divisor{
-   border-right: 2px solid #a4a3a3;
-   height: 170px;
- }
 /* COLUMNA 1 */
- .icono{
-   color: #a4a3a3;
-   font-size: 3rem;
-   margin: 0 10px;
- }
+.icono {
+  color: #a4a3a3;
+  font-size: 3rem;
+  margin: 0 10px;
+}
 
- .icono:hover {
-   color: #fff1d9;
- }
+.icono:hover {
+  color: #fff1d9;
+}
 
 /* COLUMNA 2 */
- .listaMenu_footer{
-   list-style: none;
-   padding: initial;
- }
+.listaMenu_footer {
+  list-style: none;
+  padding: initial;
+}
 
- .elementosLista{
-   margin: 10px 0;
-   text-align: center;
- }
+.elementosLista {
+  margin: 10px 0;
+  text-align: center;
+}
 
- .enlace_footer{
-   color:#a4a3a3;
-   text-decoration: none;
+.enlace_footer {
+  color: #a4a3a3;
+  text-decoration: none;
 }
 
 .enlace_footer:hover {
-   color: #fff1d9;
- }
+  color: #fff1d9;
+}
 
- /* DERECHOS */
- .derechos{
-   text-align: center;
-   height: 5vh;
-   font-size: 12px; 
-   color: #828181;
- }
- 
+/* DERECHOS */
+.derechos {
+  text-align: center;
+  height: 5vh;
+  font-size: 12px;
+  color: #828181;
+}
 
+@media screen and (max-width: 767px) {
+  /* FOOTER  */
+  .footer {
+    height: 80vh;
+  }
+  .logo_footer {
+    width: 60%;
+  }
+  .divisor {
+    border-right: initial;
+  }
+  .enlace_footer {
+    font-size: 20px;
+  }
+}
+/* UTILIDADES */
+.SECCION {
+  height: 100vh;
+}
 
+.fondoClaro {
+  background-color: #fff1d9;
+}
 
- /*------------------- TABLET---------------------- */
+.text-align-propio {
+  text-align: left;
+}
 
- @media screen and (min-width:768px) and (max-width: 1024px) {
-   body {
-      font-size: 17px;
-   }
-   
-   h1{font-size: 2.4rem;
-       font-weight:700;}
-   h2{font-size: 1.9rem;
-       font-weight:600;}
-   p{line-height: 30px;}
+.img-propio {
+  width: 90%;
+}
 
-   /* BANNER PRINCIPAL */
-   .titulo_portada_home{
-      padding-right: 20px;
-   }
+.align-no-bs {
+  text-align: left;
+}
 
-   button {
-      font-size: 1rem;
-      padding: 15px 70px;
-   }
+.parrafo {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
 
-   /* SECCION 1 */
-   .seccion-1_home{
-      background-image: initial;
-      background-attachment: initial;
-/*       margin-top: 15vh; */
-      height: 100vh;
- /*      padding-bottom: 150px; */
-      
-   }
-   .width_home{
-      max-width:90%;
-   }
-  
-    .contenedorImagenSeccion-2_home{
-      text-align: center;
-      display: initial;
-    /*   position: relative;
-      top: -30px; */
-     }
-   
-     .imagenSeccion2_home{
-      width: 30%;
-     }
+.paddingTexto {
+  padding-right: 5rem;
+}
 
-    /* FORMULARIO */
-    #comentarioHome{
-      height: 12vh;
-      margin-top: 0;
-    }
-    
-    #borrar {
-      font-size: 0.9rem;
-      height: 50px;
-    }
-   
-    #enviar {
-      font-size: 0.9rem;
-      height: 50px;
-    }
+.boton {
+  background-color: #0f0e0e;
+  padding: 2rem 7rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff1d9;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
 
- }
+.enlace:hover {
+  background-color: #516bff;
+  border-radius: 5px;
+  color: #0f0e0e;
+}
 
-
-
- 
- 
-/* ------------------------MOBILE--------------------- */
- @media screen and (max-width:767px) 
-{
-   body {
-      font-size: 15px;
-   }
-   
-   h1{font-size: 2rem;
-       font-weight:700;
-       }
-   h2{font-size: 1.7rem;
-       font-weight:600;
-       }
-   p{line-height: 25px;
-      }
-    
-  .SECCION{
+@media screen and (max-width: 767px) {
+  .SECCION {
     height: 100VH;
   }
-
-  .alinear-nobs{
+  .align-no-bs {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-   .botonActivo{
-   border: initial;
-   border-radius: initial;
-   }
-
-   .parrafo{
+  .text-align-propio {
+    text-align: center;
+  }
+  .img-propio {
+    width: 100%;
+  }
+  .img-fluid {
+    width: 90%;
+  }
+  .parrafo {
     padding-top: 20px;
     padding-bottom: 45PX;
- }
- .text-center-propio{
-  text-align: center;
- }
-
- .img-propio{
-  width: 100%;
-}
-
-   /* BANNER PRINCIPAL */
-   .titulo_portada_home{
-      padding-right: initial;
-   }
-   .paddingTexto{
+  }
+  .paddingTexto {
     padding: 0;
-   }
-   
-   .tituloPortada_home{
-      height: 45vh;
-      text-align: center;
-      order:1;
-      margin-bottom: 50px;
-   }
-
-  .boton{
-      font-size: 0.95rem;
-      padding: 20px 80px;
   }
-
-  .contenedor_imagen-portada_home{
-   height: 55vh;
-   padding-left: 20px;
-   padding-top: 130px;
-   order:0;
+  .boton {
+    font-size: 0.95rem;
+    padding: 20px 80px;
   }
-
-  .contenedor_imagen-portada_home > .img-fluid{
-    width: 100%;
-   }
-
-  /* SECCION 1 */
-  .width_home{
-   max-width: initial;
- }
-
- .seccion-1_home{
-   height: 100vh;
-   background-image: initial;
- }
- .contenedorImagenSeccion-2_home{
-  text-align: center;
-  display: initial;
- }
-
- .imagenSeccion2_home{
-  width: 55%;
-  margin-bottom: 30px;
- }
-
- /* FORMULARIO */
- #comentarioHome{
-   height: 12vh;
-   margin-top: 0;
- }
- 
- #borrar {
-   font-size: 0.9rem;
-   height: 50px;
- }
-
- #enviar {
-   font-size: 0.9rem;
-   height: 50px;
- }
-
- /* SECCION 2 */
- .textos-seccion-2_home{
-   order:1;
-   text-align: center;
-   padding: 0 20px;
- }
- 
- .img-fluid{
-  width: 90%;
- }
-  .contenedor_imagen-seccion-2_home{
-   text-align: center;
-   display: initial;
-   order:0;
-   padding-bottom: 30px;
-  }
-
-   /* FOOTER  */
-   .footer{
-      height: 80vh;
-   }
-
-   .logo_footer{
-      width: 60%;
-   }
-
- .divisor{
-   border-right: initial;
-  }
-
- .enlace_footer{
-   font-size: 20px;
- }
-
- /* -----PROGRESS----- */
-
- /* seccion 1 */
- .lista-seccion-1_progress{
-  height: 45vh;
- }
-
-.justify_progress{
-  justify-content: left;
 }
-
-/* parrafos lista */
-.enCurso-icono > li > p{
-  margin-bottom: 0;
-  text-align: left;
-  line-height: 35px;
-}
-
-.loading-icono > li > p {
-  margin-bottom: 0;
-  text-align: left;
-  line-height: 35px;
-}
-
-/* iconos lista */
-.enCurso-icono{
-  list-style-image: initial;
-}
-.loading-icono{
-  list-style-image: initial;
-}
-
-.finalizadas_progress, .enCurso_progress{
-  padding-top: 40px;
-}
-
-.padding-h2_progress{
-padding-bottom: 10px;
-padding-top: 10px;
-}
- /* seccion 2 */
- .titulos-seccion-2_progress{
-  height: 33vh;
-}
-
-/* -------------------ABOUT ME----------- */
-.portada_aboutMe{ 
-  background-size: contain;
-  background-position-y: 25%;
-  background-position-x: 10%;
-  text-align: center;
-  
- }
- .titulo-portada_aboutMe{
-  padding-right: 0;
-  padding-top: 110%;
-}
-.padding-titulos-aboutMe{
-  padding: 0 1rem;
-}
-
- .h1_aboutMe{
-  width: 60vw;
-  height: 10vh;
-  padding: 18px 0;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 35px 0 35px 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
- }
-.p_aboutMe{
-  width:60vw;
-  height: 10vh;
-  padding: 25px 0;
-  background-color: rgb(246, 246, 246);
-  border-radius: 35px 0 35px 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
- }
-
-/* seccion 1 */
-.texto-seccion-1_aboutMe{
-  order: 1;
-  text-align: center;
-}
-
-.img-seccion-1_aboutMe{
-  order: 0;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-}
-
-/* seccion 2 */
-.img-seccion-2_aboutMe{
-  width: 95%;
-}
-
-}
-
+.error404 {
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url(../assets/img/404.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,116 @@
+/* ------------------HOME------------------- */
+
+/* SECCION 1 */
+.seccion-1_home{
+    height: 100vh;
+    background-image: url(../assets/img/fondo-seccion-1-home.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  .width_home{
+    max-width: 45vw;
+  }
+  
+  .contenedorImagenSeccion-2_home{
+    display: none;
+  }
+ 
+  /* FORMULARIO */
+  .comentarios{
+    padding: 0 12px;
+  }
+  #comentarioHome{
+    height: 20vh;
+    background-color: #ffffff;
+    font-size: 1rem;
+    border-color: $color-primario-oscuro;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+  }
+  #borrar {
+    font-size: 1.1rem;
+    font-family:'Sora', sans-serif;
+    font-weight:400;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid $color-primario-oscuro;
+    border-radius: 5px;
+    height: 70px;
+ }
+ #enviar {
+    font-size: 1.1rem;
+    font-family:'Sora', sans-serif;
+    border-radius: 5px;
+    background-color: $color-primario-oscuro;
+    color: $color-primario-claro;   
+    font-weight:400;
+    height: 70px;}
+ 
+ #enviar:hover{
+       background-color:#4e4e4e;
+       border-radius: 5px;
+       color: $color-primario-claro;
+ }
+    
+  /* SECCION 2 */
+  .imagen_seccion2_home {
+     width: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     object-fit: cover;
+  }
+
+  @media screen and (max-width:767px) 
+  {
+  .width_home{
+    max-width: initial;
+  }
+ 
+  .seccion-1_home{
+    height: 100vh;
+    background-image: initial;
+  }
+  .contenedorImagenSeccion-2_home{
+   text-align: center;
+   display: initial;
+  }
+ 
+  .imagenSeccion2_home{
+   width: 55%;
+   margin-bottom: 30px;
+  }
+ 
+  #comentarioHome{
+    height: 12vh;
+    margin-top: 0;
+  }
+  
+  #borrar {
+    font-size: 0.9rem;
+    height: 50px;
+  }
+ 
+  #enviar {
+    font-size: 0.9rem;
+    height: 50px;
+  }
+
+  .textos-seccion-2_home{
+    order:1;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+   .contenedor_imagen-seccion-2_home{
+    text-align: center;
+    display: initial;
+    order:0;
+    padding-bottom: 30px;
+   }
+}
+
+

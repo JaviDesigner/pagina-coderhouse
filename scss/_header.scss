@@ -1,0 +1,44 @@
+/* -----------HEADER--------------- */
+
+/* nav bar */
+.textoMenu{
+    font-size: 16px;
+ }
+ 
+ .colorFondoMenu{
+     background-color: white;
+ }
+ 
+ .botonActivo{
+    border: 2px solid #797979;
+    border-radius: 5px;
+ }
+
+ @media screen and (max-width:767px) 
+{
+ .botonActivo{
+    border: initial;
+    border-radius: initial;
+    }
+
+/* BANNER PRINCIPAL */
+
+.tituloPortada_home{
+        height: 45vh;
+        text-align: center;
+        order:1;
+        margin-bottom: 50px;
+     }
+.contenedor_imagen-portada_home{
+        height: 55vh;
+        padding-left: 20px;
+        padding-top: 130px;
+        order:0;
+       }
+  .contenedor_imagen-portada_home > .img-fluid{
+    width: 100%;
+   }
+
+
+}
+ 

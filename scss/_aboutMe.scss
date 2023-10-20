@@ -1,0 +1,96 @@
+/* -------------ABOUTE ME------------*/
+
+.portada_aboutMe{
+    background-image: url(../assets/img/about\ me\ portada.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 55%;
+    background-position-x: 80%;
+    text-align: center;
+    height: 100vh;
+   }
+  .titulo-portada_aboutMe{
+    padding-right: 20%;
+    padding-top: 10%;
+  }
+  .padding-titulos-aboutMe{
+    padding: 0 4rem;
+  }
+   .h1_aboutMe{
+    width: 30vw;
+    height: 15vh;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 50px 0 50px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+   }
+  .p_aboutMe{
+    width:30vw;
+    height:15vh;
+    padding: 40px 0;
+    background-color: rgb(246, 246, 246);
+    border-radius: 50px 0 50px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+   }
+
+   .redesSociles_internas{
+    font-size: 3rem;
+    color: #516bff;
+    margin-top: -30px;
+   }
+
+
+@media screen and (max-width:767px) 
+{
+
+.portada_aboutMe{ 
+    background-size: contain;
+    background-position-y: 25%;
+    background-position-x: 10%;
+    text-align: center;
+    
+   }
+   .titulo-portada_aboutMe{
+    padding-right: 0;
+    padding-top: 110%;
+  }
+  .padding-titulos-aboutMe{
+    padding: 0 1rem;
+  }
+  
+   .h1_aboutMe{
+    width: 60vw;
+    height: 10vh;
+    padding: 18px 0;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 35px 0 35px 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+   }
+  .p_aboutMe{
+    width:60vw;
+    height: 10vh;
+    padding: 25px 0;
+    background-color: rgb(246, 246, 246);
+    border-radius: 35px 0 35px 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+   }
+ 
+  .texto-seccion-1_aboutMe{
+    order: 1;
+    text-align: center;
+  }
+  
+  .img-seccion-1_aboutMe{
+    order: 0;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .img-seccion-2_aboutMe{
+    width: 95%;
+  }
+}

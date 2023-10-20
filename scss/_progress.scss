@@ -1,0 +1,69 @@
+/* -----------------PROGRESS-------------- */
+.enCurso_progress{
+    max-width: 95%;
+    max-height: 100%;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.050);
+  }
+  
+  .finalizadas_progress{
+    max-width: 95%;
+    max-height: 100%;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: #97c578;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.100);
+  }
+  
+  .padding-h2_progress{
+    padding-bottom: 20px;
+  }
+  
+  .contenedor-galeria_progress{
+    height: 70vh;
+  }
+
+
+  @media screen and (max-width:767px) 
+  {
+
+  /* SECCION 1 */
+ .lista-seccion-1_progress{
+    height: 45vh;
+   }
+  
+  .justify_progress{
+    justify-content: left;
+  }
+  
+  .enCurso-icono > li > p{
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 35px;
+  }
+  
+  .loading-icono > li > p {
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 35px;
+  }
+  
+  
+  .finalizadas_progress, .enCurso_progress{
+    padding-top: 40px;
+  }
+  
+  .padding-h2_progress{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  }
+  
+   .titulos-seccion-2_progress{
+    height: 33vh;
+  }
+}
+
+
+  

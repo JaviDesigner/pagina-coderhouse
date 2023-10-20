@@ -1,0 +1,82 @@
+
+ 
+
+
+
+
+
+/* ------------------------------------------ */
+
+
+ /*------------------- TABLET---------------------- */
+
+ @media screen and (min-width:768px) and (max-width: 1024px) {
+   body {
+      font-size: 17px;
+   }
+   
+   h1{font-size: 2.4rem;
+       font-weight:700;}
+   h2{font-size: 1.9rem;
+       font-weight:600;}
+   p{line-height: 30px;}
+
+   /* BANNER PRINCIPAL */
+   .titulo_portada_home{
+      padding-right: 20px;
+   }
+
+   button {
+      font-size: 1rem;
+      padding: 15px 70px;
+   }
+
+   /* SECCION 1 */
+   .seccion-1_home{
+      background-image: initial;
+      background-attachment: initial;
+/*       margin-top: 15vh; */
+      height: 100vh;
+ /*      padding-bottom: 150px; */
+      
+   }
+   .width_home{
+      max-width:90%;
+   }
+  
+    .contenedorImagenSeccion-2_home{
+      text-align: center;
+      display: initial;
+    /*   position: relative;
+      top: -30px; */
+     }
+   
+     .imagenSeccion2_home{
+      width: 30%;
+     }
+
+    /* FORMULARIO */
+    #comentarioHome{
+      height: 12vh;
+      margin-top: 0;
+    }
+    
+    #borrar {
+      font-size: 0.9rem;
+      height: 50px;
+    }
+   
+    #enviar {
+      font-size: 0.9rem;
+      height: 50px;
+    }
+
+ }
+
+
+
+ 
+ 
+/* ------------------------MOBILE--------------------- */
+
+
