@@ -22,7 +22,7 @@
     height: 15vh;
     padding: 20px 0;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: $color-secundario-3;
     border-radius: 50px 0 50px 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
    }
@@ -30,14 +30,14 @@
     width:30vw;
     height:15vh;
     padding: 40px 0;
-    background-color: rgb(246, 246, 246);
+    background-color: $color-secundario-3;
     border-radius: 50px 0 50px 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
    }
 
    .redesSociles_internas{
     font-size: 3rem;
-    color: #516bff;
+    color: $color-secundario-1;
     margin-top: -30px;
    }
 
@@ -65,7 +65,7 @@
     height: 10vh;
     padding: 18px 0;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: $color-secundario-3;
     border-radius: 35px 0 35px 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
    }
@@ -73,7 +73,7 @@
     width:60vw;
     height: 10vh;
     padding: 25px 0;
-    background-color: rgb(246, 246, 246);
+    background-color: $color-secundario-3;
     border-radius: 35px 0 35px 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
    }

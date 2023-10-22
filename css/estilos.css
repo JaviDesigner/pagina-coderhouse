@@ -119,7 +119,7 @@ span {
 
 #comentarioHome {
   height: 20vh;
-  background-color: #ffffff;
+  background-color: white;
   font-size: 1rem;
   border-color: #0f0e0e;
   border-radius: 5px;
@@ -239,7 +239,7 @@ span {
   width: 30vw;
   height: 15vh;
   padding: 40px 0;
-  background-color: rgb(246, 246, 246);
+  background-color: white;
   border-radius: 50px 0 50px 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
 }
@@ -277,7 +277,7 @@ span {
     width: 60vw;
     height: 10vh;
     padding: 25px 0;
-    background-color: rgb(246, 246, 246);
+    background-color: white;
     border-radius: 35px 0 35px 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
   }
@@ -301,7 +301,7 @@ span {
   max-height: 100%;
   border-radius: 15px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -310,7 +310,7 @@ span {
   max-height: 100%;
   border-radius: 15px;
   padding: 40px;
-  background-color: #97c578;
+  background-color: #ffb01a;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -322,33 +322,41 @@ span {
   height: 70vh;
 }
 
-@media screen and (max-width: 767px) {
-  /* SECCION 1 */
-  .lista-seccion-1_progress {
-    height: 45vh;
+.lista-seccion-1_progress {
+  height: 45vh;
+}
+
+.justify_progress {
+  justify-content: left;
+}
+
+.enCurso-icono > li > p {
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 35px;
+}
+
+.titulos-seccion-2_progress {
+  height: 33vh;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor_imagen-portada_home > .img-propio {
+    width: 85%;
+    padding-top: 1.5rem;
   }
-  .justify_progress {
-    justify-content: left;
+  .enCurso_progress {
+    max-width: 100%;
+    padding: 30px;
+    margin-bottom: 1rem;
   }
-  .enCurso-icono > li > p {
-    margin-bottom: 0;
-    text-align: left;
-    line-height: 35px;
-  }
-  .loading-icono > li > p {
-    margin-bottom: 0;
-    text-align: left;
-    line-height: 35px;
-  }
-  .finalizadas_progress, .enCurso_progress {
-    padding-top: 40px;
+  .finalizadas_progress {
+    max-width: 100%;
+    padding: 30px;
   }
   .padding-h2_progress {
     padding-bottom: 10px;
     padding-top: 10px;
-  }
-  .titulos-seccion-2_progress {
-    height: 33vh;
   }
 }
 /* ------------PODCAST-------------- */
@@ -365,24 +373,48 @@ span {
 }
 
 #comentarioPodcast {
-  border-color: rgba(82, 82, 82, 0);
-  background-color: #e9e9e9;
+  border-color: #ebebeb;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#enviar_podcast {
+  font-size: 1.1rem;
+  font-family: "Sora", sans-serif;
+  border-radius: 5px;
+  border-color: #0f0e0e;
+  background-color: #ebebeb;
+  color: #7d7d7d;
+  font-weight: 400;
+  height: 70px;
+}
+
+#enviar_podcast:hover {
+  background-color: #ababab;
+  border-radius: 5px;
+  color: #7d7d7d;
 }
 
 .fondo-portada_podcast {
   background-image: url(../assets/img/ni\ pio\ de\ ingles.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.alto-card_podcast {
-  height: 50vh;
+.flex-mix {
+  display: flex;
 }
 
 .video_1_podcast {
   width: 100%;
   height: 100%;
+  border-radius: 10px 0 0 10px;
 }
 
 .max-width_podcast {
@@ -398,39 +430,91 @@ span {
 }
 
 .card_podcast {
+  height: 50vh;
   margin-bottom: 40px;
   border-radius: 10px;
   background-color: #ffb01a;
 }
 
-/* comentarios */
-#comentarioPodcast {
-  width: 100%;
-  height: 70px;
-  font-size: 1rem;
-  border-radius: 5px;
-  padding-top: 20px;
-  text-align: center;
+.padding-card-txt {
+  padding: 2.5rem 3rem;
 }
 
-#enviar_podcast {
-  font-size: 1.1rem;
-  font-family: "Sora", sans-serif;
-  border-radius: 5px;
-  border-color: #0f0e0e;
-  background-color: #d2d2d2;
-  color: #8b8b8b;
-  font-weight: 400;
-  height: 70px;
+.alto-card-img {
+  height: 100%;
 }
 
-#enviar_podcast:hover {
-  background-color: #e3e3e3;
-  border-radius: 5px;
-  color: #525252;
+@media screen and (max-width: 768px) {
+  .titulo-portada_podcast {
+    max-width: 100vw;
+    position: relative;
+    top: 9rem;
+    left: 0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+  }
+  .fondo-portada_podcast {
+    background-image: url(../assets/img/ni\ pio\ de\ ingles.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 4rem;
+  }
+  .color-1-divisor_podcast {
+    background-color: #fff1d9;
+    height: 100vh;
+  }
+  .color-2-divisor_podcast {
+    background-color: white;
+  }
+  .max-width_podcast {
+    max-width: 100vw;
+    padding: 40px 0;
+  }
+  .flex-mix {
+    display: block;
+  }
+  .padding-card-txt {
+    padding: 1.3rem 2rem;
+  }
+  .alto-card-img {
+    height: 30vh;
+  }
+  .video_1_podcast {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .card_podcast {
+    margin: auto;
+    height: 68vh;
+    width: 88vw;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #ffb01a;
+  }
+  .comentario_podcast {
+    padding: 0 1.3rem;
+  }
+  #comentarioPodcast {
+    height: 60px;
+    font-size: 0.8rem;
+    padding-top: initial;
+    padding: 0.5rem;
+  }
+  #enviar_podcast {
+    font-size: 0.8rem;
+    height: 60px;
+  }
 }
-
 /* --------------------CONTACT--------------------- */
+.padding-contact {
+  padding-top: 7rem;
+}
+
+.w-propio {
+  width: 50%;
+}
+
 .alto-input_progress {
   height: 65px;
   background-color: white;
@@ -445,6 +529,17 @@ span {
   border-color: rgba(255, 255, 255, 0);
 }
 
+@media screen and (max-width: 768px) {
+  .padding-contact {
+    padding-top: 0;
+  }
+  .tituloPortada_home {
+    padding-top: 5rem;
+  }
+  .w-propio {
+    width: 95%;
+  }
+}
 /*---------------------- FOOTER---------------- */
 .footer {
   background-color: #0f0e0e;
@@ -536,8 +631,8 @@ span {
 }
 
 .parrafo {
-  padding-top: 20px;
-  padding-bottom: 55px;
+  padding-top: 1.1rem;
+  padding-bottom: 3.8rem;
 }
 
 .paddingTexto {
@@ -562,7 +657,7 @@ span {
 
 @media screen and (max-width: 767px) {
   .SECCION {
-    height: 100VH;
+    height: 100hv;
   }
   .align-no-bs {
     display: flex;
@@ -579,15 +674,15 @@ span {
     width: 90%;
   }
   .parrafo {
-    padding-top: 20px;
-    padding-bottom: 45PX;
+    padding-top: 0.6rem;
+    padding-bottom: 3rem;
   }
   .paddingTexto {
     padding: 0;
   }
   .boton {
     font-size: 0.95rem;
-    padding: 20px 80px;
+    padding: 1.5rem 4.8rem;
   }
 }
 .error404 {

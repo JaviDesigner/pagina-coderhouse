@@ -1,13 +1,33 @@
 /* --------------------CONTACT--------------------- */
+.padding-contact{
+  padding-top: 7rem;
+}
+
+.w-propio{
+  width: 50%;
+}
+
 .alto-input_progress{
     height: 65px;
-    background-color:white;
+    background-color:$color-secundario-3;
     border-radius: 5px;
     padding-left: 15px;
     font-size: 16px;
     border-color: rgba(255, 255, 255, 0);
   }
   .sugerencia > #comentarioHome{
-    background-color: white;
+    background-color:$color-secundario-3;
     border-color: rgba(255, 255, 255, 0);
   }
+
+   @media screen and (max-width:768px) {
+    .padding-contact{
+      padding-top: 0;
+}
+.tituloPortada_home{
+  padding-top: 5rem;
+}
+.w-propio{
+  width: 95%;
+}
+  } 
