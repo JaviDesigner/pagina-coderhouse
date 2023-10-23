@@ -27,7 +27,7 @@
     padding-right: 5rem;
   }
   .boton {
-    background-color:$color-primario-oscuro;
+    background-color:$color-secundario-1;
     padding: 2rem 7rem;
     border-radius: 5px;
     text-align: center;
@@ -36,9 +36,9 @@
     font-size: 1.2rem;    
 }
 .enlace:hover {
-  background-color: $color-secundario-1;
+  background-color:$color-primario-oscuro;
   border-radius: 5px;
-  color: $color-primario-oscuro;
+  color: $color-primario-claro;
 }
 
 @media screen and (max-width:767px) 

@@ -69,7 +69,8 @@
     height: 50vh;
     margin-bottom: 40px;
     border-radius: 10px;
-    background-color: $color-secundario-2;
+    background-color: $color-primario-claro;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
   }
   .padding-card-txt{
     padding: 2.5rem 3rem;
@@ -95,13 +96,8 @@
     background-position-y: 4rem;
    }
 
-   .color-1-divisor_podcast{
-    background-color:$color-primario-claro;
-    height: 100vh;
-   }
-   .color-2-divisor_podcast{
-    background-color: $color-secundario-3;
-   }
+   
+   
 
    .max-width_podcast{
     max-width: 100vw;
@@ -132,7 +128,8 @@
     width: 88vw;
     margin-bottom: 40px;
     border-radius: 10px;
-    background-color: $color-secundario-2;
+    background-color: $color-primario-claro;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
   }
  .comentario_podcast{
   padding: 0 1.3rem;

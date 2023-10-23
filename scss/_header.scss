@@ -14,28 +14,43 @@
     border-radius: 5px;
  }
 
- @media screen and (max-width:767px) 
+ .banner_home{
+   padding-top: 3rem;
+ }
+
+ .tituloPortada_home {
+   width: 50%;
+ }
+ 
+ .img-banner_home > .img-propio{
+   width: 100%;
+  }
+
+ @media screen and (max-width:768px) 
 {
  .botonActivo{
     border: initial;
     border-radius: initial;
     }
 
-/* BANNER PRINCIPAL */
+    .banner_home{
+      padding-top: 0.5rem;
+    }
 
-.tituloPortada_home{
+.txt-banner_home{
         height: 45vh;
         text-align: center;
         order:1;
-        margin-bottom: 50px;
+        padding-top: 1rem;
      }
-.contenedor_imagen-portada_home{
+
+.img-banner_home{
         height: 55vh;
-        padding-left: 20px;
-        padding-top: 130px;
+        padding-left: 0.8rem;
+        padding-top: 6rem;
         order:0;
        }
-  .contenedor_imagen-portada_home > .img-fluid{
+.img-banner_home > .img-propio{
     width: 100%;
    }
 
