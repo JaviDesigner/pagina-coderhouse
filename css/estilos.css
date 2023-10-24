@@ -105,7 +105,7 @@ span {
   }
 }
 /* ------------------HOME------------------- */
-/* SECCION 1 */
+/* seccion 1 */
 .seccion-1_home {
   height: 100vh;
   background-image: url(../assets/img/fondo-seccion-1-home.png);
@@ -117,16 +117,15 @@ span {
 .seccion-1_home .width_home {
   max-width: 45vw;
 }
-.seccion-1_home .width_home .contenedorImagenSeccion-2_home {
+.seccion-1_home .width_home .contenedorImagenSeccion-1_home {
   display: none;
 }
 
-/* FORMULARIO */
+/* formulario*/
 .comentarios {
   padding: 0 12px;
 }
-
-#comentarioHome {
+.comentarios #comentarioHome {
   height: 20vh;
   background-color: white;
   font-size: 1rem;
@@ -156,42 +155,41 @@ span {
   font-weight: 400;
   height: 70px;
 }
-
 #enviar:hover {
   background-color: #4e4e4e;
   border-radius: 5px;
   color: #fff1d9;
 }
 
-/* SECCION 2 */
-.imagen_seccion2_home {
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media screen and (max-width: 767px) {
-  .width_home {
-    max-width: initial;
-  }
+@media screen and (max-width: 768px) {
+  /* seccion 1 */
   .seccion-1_home {
     height: 100vh;
     background-image: initial;
   }
-  .contenedorImagenSeccion-2_home {
+  .seccion-1_home .width_home {
+    max-width: initial;
+  }
+  .seccion-1_home .width_home .contenedorImagenSeccion-1_home {
     text-align: center;
     display: initial;
   }
-  .imagenSeccion2_home {
+  .seccion-1_home .width_home .contenedorImagenSeccion-1_home .imagenSeccion1_home {
     width: 55%;
     margin-bottom: 30px;
   }
-  #comentarioHome {
+  .seccion-1_home .width_home .parrafo {
+    padding-bottom: 0;
+  }
+  /* formulario */
+  .comentarios {
+    padding: 0 12px;
+  }
+  .comentarios #comentarioHome {
     height: 12vh;
-    margin-top: 0;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem 0;
   }
   #borrar {
     font-size: 0.9rem;
@@ -201,16 +199,23 @@ span {
     font-size: 0.9rem;
     height: 50px;
   }
+  /* seccion 2 */
   .textos-seccion-2_home {
     order: 1;
     text-align: center;
-    padding: 0 20px;
+  }
+  .textos-seccion-2_home .parrafo {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .contenedor_imagen-seccion-2_home {
     text-align: center;
     display: initial;
     order: 0;
     padding-bottom: 30px;
+  }
+  .contenedor_imagen-seccion-2_home .img-propio {
+    width: 85%;
   }
 }
 /* -------------ABOUTE ME------------*/

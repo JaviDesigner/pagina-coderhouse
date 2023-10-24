@@ -1,6 +1,6 @@
 /* ------------------HOME------------------- */
 
-/* SECCION 1 */
+/* seccion 1 */
 .seccion-1_home{
     height: 100vh;
     background-image: url(../assets/img/fondo-seccion-1-home.png);
@@ -9,33 +9,33 @@
     background-repeat: no-repeat;
     background-size: cover; 
 
-    .width_home{
-      max-width: 45vw;
-      
-      .contenedorImagenSeccion-2_home{
-        display: none;
+      .width_home{
+        max-width: 45vw;
+        
+        .contenedorImagenSeccion-1_home{
+          display: none;
+        }
       }
-    }
 }
   
-  
-  
-  
  
-  /* FORMULARIO */
+  /* formulario*/
   .comentarios{
     padding: 0 12px;
+    
+    #comentarioHome{
+      height: 20vh;
+      background-color: map-get($mapa-colores, color-secundario-3);
+      font-size: 1rem;
+      border-color: map-get($mapa-colores, color-secundario-3);
+      border-radius: 5px;
+      padding-top: 15px;
+      padding-left: 15px;
+      margin-top: 30px;
+    }
+
   }
-  #comentarioHome{
-    height: 20vh;
-    background-color: map-get($mapa-colores, color-secundario-3);
-    font-size: 1rem;
-    border-color: map-get($mapa-colores, color-secundario-3);
-    border-radius: 5px;
-    padding-top: 15px;
-    padding-left: 15px;
-    margin-top: 30px;
-  }
+  
   #borrar {
     font-size: 1.1rem;
     font-family:'Sora', sans-serif;
@@ -45,6 +45,7 @@
     border-radius: 5px;
     height: 70px;
  }
+
  #enviar {
     font-size: 1.1rem;
     font-family:'Sora', sans-serif;
@@ -52,48 +53,56 @@
     background-color: map-get($mapa-colores, color-primario-oscuro );
     color: map-get($mapa-colores, color-primario-claro);  
     font-weight:400;
-    height: 70px;}
+    height: 70px;
+
+      &:hover{
+        background-color:#4e4e4e;
+        border-radius: 5px;
+        color: map-get($mapa-colores, color-primario-claro);
+      }
+  }
  
- #enviar:hover{
-       background-color:#4e4e4e;
-       border-radius: 5px;
-       color: map-get($mapa-colores, color-primario-claro);
- }
+
+
+  @media screen and (max-width:768px) 
+  {
+
+    /* seccion 1 */
+    .seccion-1_home{
+      height: 100vh;
+      background-image: initial;
+  
+        .width_home{
+          max-width: initial;
+        
+          .contenedorImagenSeccion-1_home{
+            text-align: center;
+            display: initial;
+
+              .imagenSeccion1_home{
+                width: 55%;
+                margin-bottom: 30px;
+              }         
+          }
+        
+          .parrafo{
+            padding-bottom: 0;
+          }
+        }
+    }
+
+  /* formulario */
+  .comentarios{
+    padding: 0 12px;
     
-  /* SECCION 2 */
-  .imagen_seccion2_home {
-     width: 100%;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     object-fit: cover;
+    #comentarioHome{
+      height: 12vh;
+      margin-top: 3rem;
+      text-align: center;
+      padding: 2rem 0;
+    }
   }
 
-  @media screen and (max-width:767px) 
-  {
-  .width_home{
-    max-width: initial;
-  }
- 
-  .seccion-1_home{
-    height: 100vh;
-    background-image: initial;
-  }
-  .contenedorImagenSeccion-2_home{
-   text-align: center;
-   display: initial;
-  }
- 
-  .imagenSeccion2_home{
-   width: 55%;
-   margin-bottom: 30px;
-  }
- 
-  #comentarioHome{
-    height: 12vh;
-    margin-top: 0;
-  }
-  
   #borrar {
     font-size: 0.9rem;
     height: 50px;
@@ -104,10 +113,17 @@
     height: 50px;
   }
 
+  /* seccion 2 */
   .textos-seccion-2_home{
     order:1;
     text-align: center;
-    padding: 0 20px;
+      .parrafo{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+      }
+
+
   }
 
    .contenedor_imagen-seccion-2_home{
@@ -115,7 +131,13 @@
     display: initial;
     order:0;
     padding-bottom: 30px;
+
+        .img-propio{
+        width: 85%;
+        }
    }
+
+   
 }
 
 
