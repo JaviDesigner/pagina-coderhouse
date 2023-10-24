@@ -27,17 +27,18 @@
 
  @media screen and (max-width:768px) 
 {
+  .colorFondoMenu{
+    
+    .textoMenu{
 
-   .textoMenu{
-     font-size: 16px;
-
-      .botonActivo{
+       .botonActivo{
         border: initial;
         border-radius: initial;
-        }
-    }
+       }
+     }
+ }
 
-    .banner_home{
+   .banner_home{
       padding-top: 0.5rem;
 
         .txt-banner_home{

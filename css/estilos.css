@@ -78,10 +78,7 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-  .textoMenu {
-    font-size: 16px;
-  }
-  .textoMenu .botonActivo {
+  .colorFondoMenu .textoMenu .botonActivo {
     border: initial;
     border-radius: initial;
   }
@@ -131,9 +128,10 @@ span {
   font-size: 1rem;
   border-color: white;
   border-radius: 5px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 15px;
   margin-top: 30px;
+  text-align: center;
 }
 
 #borrar {
@@ -699,7 +697,7 @@ span {
 }
 
 .logo_footer {
-  width: 80%;
+  width: 100%;
 }
 
 .divisor {
@@ -752,13 +750,16 @@ span {
     height: 80vh;
   }
   .logo_footer {
-    width: 60%;
+    width: 70%;
   }
   .divisor {
     border-right: initial;
   }
   .enlace_footer {
     font-size: 20px;
+  }
+  .derechos {
+    padding: 0.2rem 0;
   }
 }
 /* UTILIDADES */
