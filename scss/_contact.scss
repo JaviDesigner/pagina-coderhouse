@@ -1,10 +1,16 @@
 /* --------------------CONTACT--------------------- */
-.txt-banner_contact{
-  padding-left: 3rem;
-  padding-top: 5rem;  
-  padding-bottom: 5rem;
+/* banner */
+.padding-contact{
+  padding-top: 7rem;
+
+    .txt-banner_contact{
+      padding-left: 3rem;
+      padding-top: 5rem;  
+      padding-bottom: 5rem;
+    }
 }
 
+/* seccion 1 */
 .txt-seccion-1_contact{
   padding-right: 5rem;
   padding-left: 0;
@@ -12,14 +18,8 @@
   padding-bottom: 5rem;
 }
 
-.padding-contact{
-  padding-top: 7rem;
-}
-.sugerencia > #comentarioHome{
-  margin-top: initial;
-  margin: 0.5rem 0;
-}
 
+/* seccion 2 */
 .alto-input_contact{
     height: 65px;
     background-color: map-get($mapa-colores, color-secundario-3);
@@ -29,36 +29,79 @@
     border-color: rgba(255, 255, 255, 0);
     margin: 0.5rem 0;
   }
-  .sugerencia > #comentarioHome{
-    background-color: map-get($mapa-colores, color-secundario-3);
-    border-color: rgba(255, 255, 255, 0);
-  }
+
+.sugerencia{
+   
+    #comentarioHome{
+      background-color: map-get($mapa-colores, color-secundario-3);
+      height: 20vh;
+      margin-top: initial;
+      margin: 0.5rem 0;  
+      font-family: "Sora", sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      padding-top: 15px;
+      padding-left: 15px;
+      border-color: white;
+      border-radius: 5px;
+    }
+ 
+}
 
 .mapa_contact{
   height: 75vh;
   padding: 0;
+
+  .mapa{
+    width: 100%;
+    height: 90%;
+  }
+
 }
 
-.mapa{
-  width: 100%;
-  height: 90%;
- 
-}
+
 
 
 @media screen and (max-width:768px) {
-.padding-contact{
-    padding-top: 0;
-}
 
-.txt-banner_contact{ 
-  padding-left: 0; 
+  .padding-contact{
+    padding-top: 0;
+  
+      .txt-banner_contact{
+        height: 45vh;
+        text-align: center;
+        order:1;
+        padding-right: 0;
+        padding-top: 4rem;
+        padding-left: 0;
+      }
+  }
+
+
+.txt-seccion-1_contact{
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;  
   padding-bottom: 0;
 }
 
-.sugerencia > #comentarioHome{
-  height: 30vh;
-  margin-top: 0.5rem;
+.txt-banner_contact{
+  height: 45vh;
+  text-align: center;
+  order:1;
+  padding-right: 0;
+  padding-top: 4rem;
+  padding-left: 0; 
+
+}
+
+.sugerencia{
+   
+  #comentarioHome{
+    height:20vh;
+    margin-top: 0.5rem;
+  }
+
 }
 
 #borrar{
@@ -69,17 +112,10 @@
   height: 9vh;
 }
 
+
+
 .mapa_contact{
   height: 80vh;
-}
-
-.txt-banner_contact{
-  height: 45vh;
-  text-align: center;
-  order:1;
-  padding: 0 1rem;
-  padding-top: 4rem;
-
 }
 
 .img-banner_contact{

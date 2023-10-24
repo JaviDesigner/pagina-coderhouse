@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
         <link rel="icon" type="imagen/png" href="favicon.ico">   
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>home</title>
     </head>
     
@@ -61,7 +61,7 @@
                             <div class="row h-100 justify-content-center align-items-center">
                                 
                                 <!-- TEXTOS -->
-                                <div class="txt-banner_home col-lg-6 col-sm-12 animate__animated animate__fadeInLeftBig  animate__delay-0.5s">
+                                <div data-aos="fade-right" data-aos-delay="300" class="txt-banner_home col-lg-6 col-sm-12">
                                     
                                     <div class="paddingTexto d-flex align-items-center">
                                         <div>
@@ -77,7 +77,8 @@
                                 <!-- IMAGEN -->
                                 <div class="col-lg-6 col-sm-12">
                                     
-                                    <div class="img-banner_home d-flex align-items-center justify-content-center animate__animated animate__fadeInRightBig animate__delay-0.5s">
+                                    <div data-aos="flip-down" data-aos-delay="300" class="img-banner_home d-flex align-items-center justify-content-center">
+                                        
                                         <img class="img-propio" src="./assets/img/home_portada.png" alt="ilustracion persona frustrada" >
                                     </div>
                                 </div>
@@ -106,7 +107,9 @@
                                 </div>
                                 
                                 <!-- FORMULARIO -->
-                                <div class="col-12 text-center">
+                                <div data-aos="fade-down" data-aos-delay="200" class="col-12 text-center">
+
+                                    <!-- animate__animated animate__fadeInDown animate__delay-4s -->
 
                                     <form action="./pages/404.html" method="post">
                                     
@@ -142,7 +145,7 @@
                         <div class="row">
 
                             <!-- TEXTOS -->
-                            <div class="paddingTexto textos-seccion-2_home col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+                            <div data-aos="fade-right" data-aos-delay="400" class="paddingTexto textos-seccion-2_home col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
                                 <div>
                                     <!-- TITULO -->
                                     <div>
@@ -156,7 +159,7 @@
                             </div>
                             
                             <!-- IMAGEN --> 
-                            <div class="contenedor_imagen-seccion-2_home col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                            <div data-aos="flip-down" data-aos-delay="400" class="contenedor_imagen-seccion-2_home col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
                                 <img class="img-propio" src="./assets/img/seccion_2_Home.png" alt="ilustracion personaje pensativo">
                             </div>      
                         </div>
@@ -228,7 +231,11 @@
 
             </footer>
         </div>
-         
+       
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+        <script>
+            AOS.init();
+            </script>
         <script src="./js/bootstrap.bundle.min.js"></script>    
     </body>
 </html>

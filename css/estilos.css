@@ -164,7 +164,7 @@ span {
 @media screen and (max-width: 768px) {
   /* seccion 1 */
   .seccion-1_home {
-    height: 100vh;
+    height: 110vh;
     background-image: initial;
   }
   .seccion-1_home .width_home {
@@ -219,27 +219,22 @@ span {
   }
 }
 /* -------------ABOUTE ME------------*/
+/* banner */
 .portada_aboutMe {
   background-image: url(../assets/img/about\ me\ portada.png);
-  background-size: 50%;
+  background-size: 45%;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: 75%;
-  background-position-x: 90%;
+  background-position-y: 65%;
+  background-position-x: 80%;
   text-align: center;
   height: 100vh;
 }
-
-.titulo-portada_aboutMe {
+.portada_aboutMe .titulo-portada_aboutMe {
   padding-right: 30%;
   padding-top: 10%;
 }
-
-.padding-titulos-aboutMe {
-  padding: 0 4rem;
-}
-
-.h1_aboutMe {
+.portada_aboutMe .titulo-portada_aboutMe .h1_aboutMe {
   width: 30vw;
   height: 15vh;
   padding: 20px 0;
@@ -248,8 +243,7 @@ span {
   border-radius: 50px 0 50px 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
 }
-
-.p_aboutMe {
+.portada_aboutMe .titulo-portada_aboutMe .p_aboutMe {
   width: 30vw;
   height: 15vh;
   padding: 40px 0;
@@ -258,42 +252,50 @@ span {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
 }
 
-.redes_abouteMe {
+/* seccion 1 */
+.texto-seccion-1_aboutMe {
+  padding-left: 0;
+}
+.texto-seccion-1_aboutMe .redes_abouteMe {
   margin-top: 1.2rem;
 }
-
-.redes_abouteMe > p {
+.texto-seccion-1_aboutMe .redes_abouteMe p {
   color: #ababab;
 }
-
-.redesSociles_internas {
+.texto-seccion-1_aboutMe .redes_abouteMe .redesSociles_internas {
   font-size: 3rem;
 }
-
-.redesSociles_internas > a {
+.texto-seccion-1_aboutMe .redes_abouteMe .redesSociles_internas a {
   color: #ababab;
 }
-
-.redesSociles_internas > a:hover {
+.texto-seccion-1_aboutMe .redes_abouteMe .redesSociles_internas a:hover {
   color: #516bff;
 }
 
-@media screen and (max-width: 767px) {
+/* seccion 1 */
+.img-seccion-1_aboutMe .img-propio {
+  width: 90%;
+  padding-left: 0;
+}
+
+/* seccion 2 */
+.padding-titulos-aboutMe {
+  padding: 0 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* banner */
   .portada_aboutMe {
     background-size: 85%;
     background-position-y: 30%;
     background-position-x: 60%;
     text-align: center;
   }
-  .titulo-portada_aboutMe {
+  .portada_aboutMe .titulo-portada_aboutMe {
     padding-right: 0;
     padding-top: 100%;
   }
-  .padding-titulos-aboutMe {
-    padding: 0 0.5rem;
-    padding-bottom: 4rem;
-  }
-  .h1_aboutMe {
+  .portada_aboutMe .titulo-portada_aboutMe .h1_aboutMe {
     width: 60vw;
     height: 10vh;
     padding: 18px 0;
@@ -302,7 +304,7 @@ span {
     border-radius: 35px 0 35px 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
   }
-  .p_aboutMe {
+  .portada_aboutMe .titulo-portada_aboutMe .p_aboutMe {
     width: 60vw;
     height: 10vh;
     padding: 25px 0;
@@ -310,12 +312,19 @@ span {
     border-radius: 35px 0 35px 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
   }
-  .redesSociles_internas {
-    font-size: 2.2rem;
-  }
+  /* seccion 1 */
   .texto-seccion-1_aboutMe {
     order: 1;
     text-align: center;
+  }
+  .texto-seccion-1_aboutMe .redes_abouteMe {
+    margin-top: 1.2rem;
+  }
+  .texto-seccion-1_aboutMe .redes_abouteMe p {
+    color: #ababab;
+  }
+  .texto-seccion-1_aboutMe .redes_abouteMe .redesSociles_internas {
+    font-size: 2.2rem;
   }
   .img-seccion-1_aboutMe {
     order: 0;
@@ -324,8 +333,13 @@ span {
     width: 90%;
     padding-left: 2rem;
   }
-  .img-seccion-2_aboutMe > .img-propio {
+  /* seccion 2 */
+  .img-seccion-2_aboutMe .img-propio {
     width: 85%;
+  }
+  .padding-titulos-aboutMe {
+    padding: 0 0.5rem;
+    padding-bottom: 4rem;
   }
 }
 /* -----------------PROGRESS-------------- */
@@ -577,12 +591,17 @@ span {
   }
 }
 /* --------------------CONTACT--------------------- */
-.txt-banner_contact {
+/* banner */
+.padding-contact {
+  padding-top: 7rem;
+}
+.padding-contact .txt-banner_contact {
   padding-left: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
+/* seccion 1 */
 .txt-seccion-1_contact {
   padding-right: 5rem;
   padding-left: 0;
@@ -590,15 +609,7 @@ span {
   padding-bottom: 5rem;
 }
 
-.padding-contact {
-  padding-top: 7rem;
-}
-
-.sugerencia > #comentarioHome {
-  margin-top: initial;
-  margin: 0.5rem 0;
-}
-
+/* seccion 2 */
 .alto-input_contact {
   height: 65px;
   background-color: white;
@@ -609,17 +620,25 @@ span {
   margin: 0.5rem 0;
 }
 
-.sugerencia > #comentarioHome {
+.sugerencia #comentarioHome {
   background-color: white;
-  border-color: rgba(255, 255, 255, 0);
+  height: 20vh;
+  margin-top: initial;
+  margin: 0.5rem 0;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-color: white;
+  border-radius: 5px;
 }
 
 .mapa_contact {
   height: 75vh;
   padding: 0;
 }
-
-.mapa {
+.mapa_contact .mapa {
   width: 100%;
   height: 90%;
 }
@@ -628,12 +647,30 @@ span {
   .padding-contact {
     padding-top: 0;
   }
-  .txt-banner_contact {
+  .padding-contact .txt-banner_contact {
+    height: 45vh;
+    text-align: center;
+    order: 1;
+    padding-right: 0;
+    padding-top: 4rem;
     padding-left: 0;
+  }
+  .txt-seccion-1_contact {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
     padding-bottom: 0;
   }
-  .sugerencia > #comentarioHome {
-    height: 30vh;
+  .txt-banner_contact {
+    height: 45vh;
+    text-align: center;
+    order: 1;
+    padding-right: 0;
+    padding-top: 4rem;
+    padding-left: 0;
+  }
+  .sugerencia #comentarioHome {
+    height: 20vh;
     margin-top: 0.5rem;
   }
   #borrar {
@@ -644,13 +681,6 @@ span {
   }
   .mapa_contact {
     height: 80vh;
-  }
-  .txt-banner_contact {
-    height: 45vh;
-    text-align: center;
-    order: 1;
-    padding: 0 1rem;
-    padding-top: 4rem;
   }
   .img-banner_contact {
     height: 55vh;

@@ -1,115 +1,158 @@
 /* -------------ABOUTE ME------------*/
 
+/* banner */
 .portada_aboutMe{
     background-image: url(../assets/img/about\ me\ portada.png);
-    background-size: 50%;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 75%;
-    background-position-x: 90%;
+    background-position-y: 65%;
+    background-position-x: 80%;
     text-align: center;
     height: 100vh;
-   }
-  .titulo-portada_aboutMe{
-    padding-right: 30%;
-    padding-top: 10%;
-  }
-  .padding-titulos-aboutMe{
-    padding: 0 4rem;
-  }
-   .h1_aboutMe{
-    width: 30vw;
-    height: 15vh;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    background-color: map-get($mapa-colores, color-secundario-2);
-    border-radius: 50px 0 50px 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
-   }
-  .p_aboutMe{
-    width:30vw;
-    height:15vh;
-    padding: 40px 0;
-    background-color: map-get($mapa-colores, color-secundario-3);
-    border-radius: 50px 0 50px 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
-   }
-.redes_abouteMe{
-  margin-top: 1.2rem;
-}
+    
+      .titulo-portada_aboutMe{
+        padding-right: 30%;
+        padding-top: 10%;
 
-.redes_abouteMe > p{
-  color: map-get($mapa-colores, color-primario-gris-2);
-}
+          .h1_aboutMe{
+            width: 30vw;
+            height: 15vh;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            background-color: map-get($mapa-colores, color-secundario-2);
+            border-radius: 50px 0 50px 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+          }
+          .p_aboutMe{
+            width:30vw;
+            height:15vh;
+            padding: 40px 0;
+            background-color: map-get($mapa-colores, color-secundario-3);
+            border-radius: 50px 0 50px 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+          }
 
-   .redesSociles_internas{
-    font-size: 3rem;
-   }
+      }
+}
   
-   .redesSociles_internas > a{
-    color: map-get($mapa-colores, color-primario-gris-2);
-   }
 
-   .redesSociles_internas > a:hover{
-    color: map-get($mapa-colores, color-secundario-1);
-   }
+/* seccion 1 */
+.texto-seccion-1_aboutMe{
+  padding-left: 0;
 
+    .redes_abouteMe{
+      margin-top: 1.2rem;
+      
+        p{
+          color: map-get($mapa-colores, color-primario-gris-2);
+        }
 
-@media screen and (max-width:767px) 
+        .redesSociles_internas{
+          font-size: 3rem;
+
+            a{
+              color: map-get($mapa-colores, color-primario-gris-2);
+               
+                &:hover{
+                  color: map-get($mapa-colores, color-secundario-1);
+                }
+            
+            }
+        
+        }
+   
+    }
+
+}
+
+/* seccion 1 */
+.img-seccion-1_aboutMe{
+    .img-propio{
+    width: 90%;
+    padding-left: 0;
+    }
+}
+
+/* seccion 2 */
+.padding-titulos-aboutMe{
+    padding: 0 4rem;
+}
+
+   
+
+@media screen and (max-width:768px) 
 {
-
-.portada_aboutMe{ 
+  /* banner */
+  .portada_aboutMe{
     background-size: 85%;
     background-position-y: 30%;
     background-position-x: 60%;
     text-align: center;
     
-   }
-   .titulo-portada_aboutMe{
-    padding-right: 0;
-    padding-top: 100%;
-  }
-  .padding-titulos-aboutMe{
-    padding: 0 0.5rem;
-    padding-bottom: 4rem;
-  }
-  
-   .h1_aboutMe{
-    width: 60vw;
-    height: 10vh;
-    padding: 18px 0;
-    margin-bottom: 20px;
-    background-color: map-get($mapa-colores, color-secundario-2);
-    border-radius: 35px 0 35px 35px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
-   }
-  .p_aboutMe{
-    width:60vw;
-    height: 10vh;
-    padding: 25px 0;
-    background-color: map-get($mapa-colores, color-secundario-3);
-    border-radius: 35px 0 35px 35px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
-   }
+      .titulo-portada_aboutMe{
+        padding-right: 0;
+        padding-top: 100%;
 
-   .redesSociles_internas{
-    font-size: 2.2rem;
-   }
-  .texto-seccion-1_aboutMe{
+          .h1_aboutMe{
+            width: 60vw;
+            height: 10vh;
+            padding: 18px 0;
+            margin-bottom: 20px;
+            background-color: map-get($mapa-colores, color-secundario-2);
+            border-radius: 35px 0 35px 35px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+          }
+          .p_aboutMe{
+            width:60vw;
+            height: 10vh;
+            padding: 25px 0;
+            background-color: map-get($mapa-colores, color-secundario-3);
+            border-radius: 35px 0 35px 35px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.093), 0 6px 10px 0 rgba(0, 0, 0, 0.055);
+          }
+
+      }
+}
+
+/* seccion 1 */
+.texto-seccion-1_aboutMe{
     order: 1;
     text-align: center;
-  }
+
+    .redes_abouteMe{
+      margin-top: 1.2rem;
+      
+        p{
+          color: map-get($mapa-colores, color-primario-gris-2);
+        }
+
+        .redesSociles_internas{
+          font-size: 2.2rem;        
+        }
+   
+    }
+}
   
-  .img-seccion-1_aboutMe{
+.img-seccion-1_aboutMe{
     order: 0;
     display: flex;
     justify-content: center;
     width: 90%;
     padding-left: 2rem;
   }
-  
-  .img-seccion-2_aboutMe > .img-propio{
-    width: 85%;
+
+/* seccion 2 */  
+.img-seccion-2_aboutMe{
+   
+    .img-propio{
+      width: 85%;
+    }
   }
+
+.padding-titulos-aboutMe{
+    padding: 0 0.5rem;
+    padding-bottom: 4rem;
+}
 
 }
