@@ -4,7 +4,7 @@
  }
 
 .fondoClaro{
-  background-color: $color-primario-claro;
+  background-color: map-get($mapa-colores, color-primario-claro );
 }
 .text-align-propio{
   text-align: left;
@@ -27,18 +27,18 @@
     padding-right: 5rem;
   }
   .boton {
-    background-color:$color-secundario-1;
+    background-color: map-get($mapa-colores, color-secundario-1);
     padding: 2rem 7rem;
     border-radius: 5px;
     text-align: center;
-    color: $color-primario-claro;
+    color: map-get($mapa-colores, color-primario-claro);
     text-decoration: none;
     font-size: 1.2rem;    
 }
 .enlace:hover {
-  background-color:$color-primario-oscuro;
+  background-color: map-get($mapa-colores, color-primario-oscuro);
   border-radius: 5px;
-  color: $color-primario-claro;
+  color: map-get($mapa-colores, color-primario-claro);
 }
 
 @media screen and (max-width:767px) 

@@ -8,15 +8,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-  }
+
+    .width_home{
+      max-width: 45vw;
+      
+      .contenedorImagenSeccion-2_home{
+        display: none;
+      }
+    }
+}
   
-  .width_home{
-    max-width: 45vw;
-  }
   
-  .contenedorImagenSeccion-2_home{
-    display: none;
-  }
+  
+  
  
   /* FORMULARIO */
   .comentarios{
@@ -24,9 +28,9 @@
   }
   #comentarioHome{
     height: 20vh;
-    background-color: $color-secundario-3;
+    background-color: map-get($mapa-colores, color-secundario-3);
     font-size: 1rem;
-    border-color: $color-primario-oscuro;
+    border-color: map-get($mapa-colores, color-secundario-3);
     border-radius: 5px;
     padding-top: 15px;
     padding-left: 15px;
@@ -37,7 +41,7 @@
     font-family:'Sora', sans-serif;
     font-weight:400;
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid $color-primario-oscuro;
+    border: 2px solid map-get($mapa-colores, color-primario-oscuro );
     border-radius: 5px;
     height: 70px;
  }
@@ -45,15 +49,15 @@
     font-size: 1.1rem;
     font-family:'Sora', sans-serif;
     border-radius: 5px;
-    background-color: $color-primario-oscuro;
-    color: $color-primario-claro;   
+    background-color: map-get($mapa-colores, color-primario-oscuro );
+    color: map-get($mapa-colores, color-primario-claro);  
     font-weight:400;
     height: 70px;}
  
  #enviar:hover{
        background-color:#4e4e4e;
        border-radius: 5px;
-       color: $color-primario-claro;
+       color: map-get($mapa-colores, color-primario-claro);
  }
     
   /* SECCION 2 */

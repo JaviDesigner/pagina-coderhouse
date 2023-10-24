@@ -10,7 +10,7 @@
  body {
     font-family: $fuente-principal;
     font-size: 20px;
-    color: $color-primario-oscuro;
+    color: map-get($mapa-colores, color-primario-oscuro);
  }
  
  h1{font-size: 3.7rem;

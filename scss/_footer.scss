@@ -1,6 +1,6 @@
 /*---------------------- FOOTER---------------- */
 .footer{
-    background-color: $color-primario-oscuro;
+    background-color: map-get($mapa-colores, color-primario-oscuro );
     height: 45vh;
   }
  
@@ -20,7 +20,7 @@
   }
  
   .icono:hover {
-    color: $color-primario-claro;
+    color: map-get($mapa-colores, color-primario-claro);
   }
  
  /* COLUMNA 2 */
@@ -40,7 +40,7 @@
  }
  
  .enlace_footer:hover {
-    color: $color-primario-claro;
+    color: map-get($mapa-colores, color-primario-claro);
   }
  
   /* DERECHOS */

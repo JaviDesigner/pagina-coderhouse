@@ -15,7 +15,7 @@
     max-height: 100%;
     border-radius: 15px;
     padding: 40px;
-    background-color: $color-secundario-3;
+    background-color: map-get($mapa-colores, color-secundario-3);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.050);
   }
   
@@ -24,7 +24,7 @@
     max-height: 100%;
     border-radius: 15px;
     padding: 40px;
-    background-color: $color-secundario-2;
+    background-color: map-get($mapa-colores, color-secundario-2);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.093), 0 10px 40px 0 rgba(0, 0, 0, 0.100);
   }
   
@@ -44,7 +44,7 @@
     justify-content: left;
   }
   
-  
+
    .titulos-seccion-2_progress{
     height: 33vh;
   }
