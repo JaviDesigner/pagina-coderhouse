@@ -839,18 +839,21 @@ span {
   }
 }
 .desktop_404 {
-  height: 100vh;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.desktop_404 .img-propio {
+  width: 80%;
 }
 
 .mobile_404 {
   display: none;
   height: 100vh;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.mobile_404 .img-propio {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
