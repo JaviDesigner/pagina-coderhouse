@@ -3,15 +3,19 @@
 /* nav bar */
  .colorFondoMenu{
      background-color: map-get($mapa-colores, color-secundario-3);
-     
-     .textoMenu{
-      font-size: 16px;
 
-        .botonActivo{
-          border: 2px solid #797979;
-          border-radius: 5px;
-        }
+      .logo-mobile{
+        display: none;
       }
+            
+      .textoMenu{
+        font-size: 16px;
+
+          .botonActivo{
+            border: 2px solid #797979;
+            border-radius: 5px;
+          }
+        }
   }
  
  /* banner */
@@ -28,6 +32,13 @@
  @media screen and (max-width:768px) 
 {
   .colorFondoMenu{
+
+    .logo-mobile{
+      display: initial;
+    }
+    .logo-desktop{
+        display: none;
+    }
     
     .textoMenu{
 
