@@ -66,7 +66,7 @@
     padding: 3rem;
    }
   .card_podcast{
-    height: 50vh;
+    height: 40vh;
     margin-bottom: 40px;
     border-radius: 10px;
     background-color: map-get($mapa-colores, color-primario-claro);
@@ -79,6 +79,9 @@
     height: 100%;
   }
   
+  .textosCard_podcast{
+    padding-top: 1rem;
+  }
  @media screen and (max-width: 768px){
   
   .titulo-portada_podcast{
