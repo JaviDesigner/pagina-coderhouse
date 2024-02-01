@@ -48,6 +48,9 @@ span {
 }
 
 @media screen and (max-width: 767px) {
+  p {
+    font-weight: 200;
+  }
   h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -502,7 +505,7 @@ span {
 }
 
 .fondo-portada_podcast {
-  background-image: url(../assets/img/personajes/ni_pio_de_ingles_podcast_1920.jpg);
+  background-image: url(../assets/img/personajes/portada_desktop_1920x1080.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -586,7 +589,7 @@ span {
   }
   .card_podcast {
     margin: auto;
-    height: 68vh;
+    height: 55vh;
     width: 88vw;
     margin-bottom: 40px;
     border-radius: 10px;
