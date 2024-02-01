@@ -37,18 +37,25 @@
   .enlace_footer{
     color:#a4a3a3;
     text-decoration: none;
+    font-family: $fuente-principal;
+    font-size: 1.2rem;
+    font-weight: 400;
  }
  
  .enlace_footer:hover {
     color: map-get($mapa-colores, color-primario-claro);
   }
  
-  /* DERECHOS */
-  .derechos{
+  /* DERECHOS*/
+  .derechos {
+    padding: 0.3rem 0;
     text-align: center;
     height: 5vh;
-    font-size: 12px; 
     color: #828181;
+    p{
+      font-size: 0.85rem;
+      font-weight: 100;
+    }
   }
 
   
@@ -67,9 +74,6 @@
    border-right: initial;
   }
 
- .enlace_footer{
-   font-size: 20px;
- }
  .derechos{
   padding: 0.2rem 0;
 }
