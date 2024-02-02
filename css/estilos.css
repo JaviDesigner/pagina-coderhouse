@@ -12,7 +12,7 @@ body {
   font-family: "Noto", sans-serif;
   font-size: 1.2rem;
   font-weight: 100;
-  color: #36373f;
+  color: #2c2c31;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
   font-family: "Sora", sans-serif;
   font-weight: 700;
   margin: 0;
-  color: #36373f;
+  color: #2c2c31;
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
   font-family: "Sora", sans-serif;
   font-weight: 600;
   margin: 0;
-  color: #36373f;
+  color: #2c2c31;
 }
 
 h3 {
@@ -36,7 +36,7 @@ h3 {
   font-family: "Sora", sans-serif;
   font-weight: 600;
   margin: 0;
-  color: #36373f;
+  color: #2c2c31;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
   font-size: 1.2rem;
   margin: 0;
   font-weight: 100;
-  color: #36373f;
+  color: #2c2c31;
 }
 
 span {
@@ -163,7 +163,7 @@ span {
   font-family: "Sora", sans-serif;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #36373f;
+  border: 2px solid #2c2c31;
   border-radius: 5px;
   height: 70px;
 }
@@ -172,7 +172,7 @@ span {
   font-size: 1.1rem;
   font-family: "Sora", sans-serif;
   border-radius: 5px;
-  background-color: #36373f;
+  background-color: #2c2c31;
   color: #fff1d9;
   font-weight: 400;
   height: 70px;
@@ -492,13 +492,14 @@ span {
   border-radius: 5px;
   padding-top: 20px;
   text-align: center;
+  color: #7d7d7d;
 }
 
 #enviar_podcast {
   font-size: 1.1rem;
   font-family: "Sora", sans-serif;
   border-radius: 5px;
-  border-color: #36373f;
+  border-color: rgba(128, 128, 128, 0);
   background-color: #ebebeb;
   color: #7d7d7d;
   font-weight: 400;
@@ -717,7 +718,7 @@ span {
 }
 /*---------------------- FOOTER---------------- */
 .footer {
-  background-color: #36373f;
+  background-color: #2c2c31;
   height: 45vh;
 }
 
@@ -832,7 +833,7 @@ span {
 }
 
 .enlace:hover {
-  background-color: #36373f;
+  background-color: #2c2c31;
   border-radius: 5px;
   color: #fff1d9;
 }

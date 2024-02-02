@@ -18,13 +18,14 @@
     border-radius: 5px;
     padding-top: 20px;
     text-align: center;
+    color:map-get($mapa-colores, color-primario-gris-3);
    }
 
    #enviar_podcast {
     font-size: 1.1rem;
     font-family:'Sora', sans-serif;
     border-radius: 5px;
-    border-color: map-get($mapa-colores, color-primario-oscuro );
+    border-color: map-get($mapa-colores, color-transparente) ;
     background-color: map-get($mapa-colores, color-primario-gris-1);
     color: map-get($mapa-colores, color-primario-gris-3);  
     font-weight:400;
@@ -143,6 +144,7 @@
    font-size: 0.8rem;
    padding-top: initial;
    padding: 0.5rem;
+   color: map-get($mapa-colores, primario-gris-2);
   }
 
   #enviar_podcast {
